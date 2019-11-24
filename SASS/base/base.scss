@@ -1,0 +1,61 @@
+html{
+  width: 100%;
+  height: 100%;
+  }
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  ul{
+  padding: 0;
+  margin: 0;
+  }
+  
+  li{
+  list-style-type: none;
+  }
+  
+  p{
+  padding: 0;
+  margin: 0;
+  }
+  
+  a{
+  text-decoration: none;
+  }
+  
+  *{
+  box-sizing: border-box;
+  }
+
+    // tag styles reset
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-weight: normal;
+  }
+  
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  section{
+    height:100vh;
+    }
+   
+
+    .container {
+      max-width: 940px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    

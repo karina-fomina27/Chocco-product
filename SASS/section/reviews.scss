@@ -1,0 +1,120 @@
+
+//  Style for section reviews
+
+.reviews{
+  background-color: #ffffff;
+  position: relative;
+  background-image: url(../img/berry.png);
+  background-repeat: no-repeat;
+  background-position: 100% 2.5%;
+ 
+  &::before{
+    content: "";
+    width: 135px; 
+    height:193px;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    z-index: 20;
+    display: block;
+    background: url(../img/3-layers.png) center no-repeat;
+    background-size: cover;
+  }
+  
+ }
+
+ .reviews__container{
+width: 100%;
+margin:0 auto;
+display: flex;
+justify-content: center;
+
+ }
+
+ .reviews-title{
+color: #0d0d0d;
+font-family: "Alegreya Sans";
+font-size: 48px;
+font-weight: 700;
+text-transform: uppercase;
+margin: 0 0 44px 0;
+ }
+
+ .reviews-content{
+width: 940px;
+height: 345px;
+background-image: url(../img/bg-rew.jpg);
+margin: 0 auto;
+display: flex;
+position: relative;
+
+ }
+
+ .reviews__list{
+    padding: 4.79%;
+    margin-bottom: 5.33%;
+    position: relative;
+    display: flex;
+ }
+
+ .reviews__item{
+  display: flex;
+ }
+
+ .reviews__photo{
+  margin-right: 20px;
+    position: relative;
+    z-index: 10;
+ }
+
+ .rewiews__comment{
+  width: 414px;
+  text-align: left;
+ }
+
+ .reviews__comment__title{
+color: #323232;
+font-family: "Alegreya Sans";
+font-size: 30px;
+font-weight: 500;
+margin: 25px 0 30px 0;
+ }
+
+ .reviews__comment__title{
+color: #666666;
+font-family: "Alegreya Sans";
+font-size: 18px;
+font-weight: 400;
+ }
+
+ .reviews__comment__txt{
+color: #666666;
+font-family: "Alegreya Sans";
+font-size: 18px;
+font-weight: 400; 
+margin: 0 0 32px 0;
+ }
+
+.reviews__carusel{
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 20;
+}
+
+.carusel__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 27px 11px 0 0;
+}
+
+.carusel__photo{
+  width: 67px;
+  height: 68px;
+  position: obsolute;
+  border: 6px solid #0f5a47;
+  background-color: #efefef;
+  border-radius: 50%;
+}
