@@ -1,33 +1,30 @@
-
-.walcome-page {
-  background-image: url(/img/bg-1.jpg);
+.welcome-page {
+  background-image: url("../img/welcome.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
- }
+  background-size: cover; }
 
-  .main{
-  
-  &__container{
+.main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
-}
-}
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
-.icon-tel{
-color: #ffffff;
-font-family: "Alegreya Sans";
-font-size: 24px;
-font-weight: 400;
-line-height: 30px;
-text-transform: uppercase;
-
-&:before{
-  content: url(../img/icon_png/phone_.png);
-  margin: 0 5px 0 0; 
-  }
-}
+.icon-tel {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase; }
+  .icon-tel:before {
+    content: url(../img/icon_png/phone_.png);
+    margin: 0 5px 0 0; }
 
 .content__title {
   width: 404px;
@@ -37,8 +34,7 @@ text-transform: uppercase;
   font-size: 60px;
   font-weight: 700;
   line-height: 60px;
-  text-transform: uppercase;
-   }
+  text-transform: uppercase; }
 
 .content__txt {
   width: 341px;
@@ -47,11 +43,11 @@ text-transform: uppercase;
   font-family: "Alegreya Sans";
   font-size: 21px;
   font-weight: 400;
-  margin: 0 0 70px 0;
-  }
+  margin: 0 0 70px 0; }
 
 .content__button {
   background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
   box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
   font-family: "Alegreya Sans - Extra Bold";
   font-size: 19px;
@@ -59,8 +55,7 @@ text-transform: uppercase;
   text-transform: uppercase;
   text-align: center;
   border-radius: 30px;
-  padding: 24px 34px ;
-  }
+  padding: 24px 34px; }
 
 .content__icon {
   width: 100%;
@@ -69,8 +64,8 @@ text-transform: uppercase;
   display: flex;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  margin: 68px 0 0 0; }
+  justify-content: space-between;
+  margin: 68px 0 50px 50px; }
 
 .leaf_icon {
   width: 84px;
@@ -79,20 +74,17 @@ text-transform: uppercase;
   font-family: "Alegreya Sans";
   font-size: 16px;
   font-weight: 400;
-  position: relative; 
-
-  &:before {
+  position: relative; }
+  .leaf_icon:before {
     content: "";
     position: absolute;
     width: 44px;
     height: 41px;
     display: block;
     background: url(../img/icon_png/leaf.png) no-repeat;
-    right: 90px; 
-  }
-}
+    right: 90px; }
 
-.car_icon{
+.car_icon {
   width: 60px;
   height: 49px;
   position: relative;
@@ -100,18 +92,15 @@ text-transform: uppercase;
   font-family: "Alegreya Sans";
   font-size: 16px;
   font-weight: 400;
-  margin: 0px 46px 0px 48px;
-  
-  &:before {
+  margin: 0px 46px 0px 48px; }
+  .car_icon:before {
     content: "";
     position: absolute;
     width: 50px;
     height: 40px;
     display: block;
     background: url(../img/icon_png/car.png);
-    right: 70px;
-  }
-}
+    right: 70px; }
 
 .tape_acon {
   width: 57px;
@@ -120,15 +109,12 @@ text-transform: uppercase;
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 16px;
-  font-weight: 400;
-  
-   &:before {
+  font-weight: 400; }
+  .tape_acon:before {
     content: "";
     position: absolute;
     width: 42px;
     height: 42px;
     display: block;
     background: url(../img/icon_png/tape.png);
-    right: 67px;
-   }
-}
+    right: 67px; }

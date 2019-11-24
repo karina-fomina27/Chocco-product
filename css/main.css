@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i");
-html {
-  width: 100%;
-  height: 100%; }
-
-body {
+html, body {
   width: 100%;
   height: 100%; }
 
@@ -35,14 +31,9 @@ h6 {
   margin: 0;
   font-weight: normal; }
 
-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: inherit; }
-
 section {
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 .container {
   max-width: 940px;
@@ -559,8 +550,8 @@ template {
 
 .fixed-menu {
   position: fixed;
-  top: 100px;
-  right: 60px;
+  top: 177px;
+  right: 172px;
   z-index: 2; }
 
 .fixed-menu__dot {
@@ -625,7 +616,7 @@ template {
   position: relative;
   background-image: url(../img/berry.png);
   background-repeat: no-repeat;
-  background-position: 100% 2.5%; }
+  background-position: 86% 2.5%; }
   .reviews::before {
     content: "";
     width: 135px;
@@ -739,11 +730,11 @@ template {
   background-color: #efefef;
   border-radius: 50%; }
 
-.walcome-page {
-  background-image: url(/img/bg-1.jpg);
+.welcome-page {
+  background-image: url("../img/welcome.jpg");
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .main__container {
   display: -webkit-box;
@@ -805,8 +796,8 @@ template {
   display: flex;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  margin: 68px 0 0 0; }
+  justify-content: space-between;
+  margin: 68px 0 50px 50px; }
 
 .leaf_icon {
   width: 84px;
@@ -859,3 +850,6 @@ template {
     display: block;
     background: url(../img/icon_png/tape.png);
     right: 67px; }
+
+.left_img {
+  margin: 0 0px 0px 60px; }
