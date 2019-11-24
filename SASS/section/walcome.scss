@@ -6,12 +6,14 @@
   background-repeat: no-repeat;
  }
 
-  .main__container{
+  .main{
+  
+  &__container{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+}
 
 .icon-tel{
 color: #ffffff;
@@ -24,7 +26,7 @@ text-transform: uppercase;
 &:before{
   content: url(../img/icon_png/phone_.png);
   margin: 0 5px 0 0; 
-}
+  }
 }
 
 .content__title {
