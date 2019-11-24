@@ -4,16 +4,13 @@
   background-size: cover;
   background-repeat: no-repeat;
  }
-
-.main{
-
-  &__container{
+  .main__container{
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-
 }
+
+
 .icon-tel{
 color: #ffffff;
 font-family: "Alegreya Sans";
@@ -22,13 +19,11 @@ font-weight: 400;
 line-height: 30px;
 text-transform: uppercase;
 
-$::before{
+&:before{
   content: url(../img/icon_png/phone_.png);
   margin: 0 5px 0 0; 
 }
-
 }
-
 .content__title {
   width: 404px;
   height: 160px;
@@ -79,17 +74,20 @@ $::before{
   font-family: "Alegreya Sans";
   font-size: 16px;
   font-weight: 400;
-  position: relative; }
-  .leaf_icon:before {
+  position: relative; 
+
+  &:before {
     content: "";
     position: absolute;
     width: 44px;
     height: 41px;
     display: block;
     background: url(../img/icon_png/leaf.png) no-repeat;
-    right: 90px; }
+    right: 90px; 
+  }
+}
 
-.car_icon {
+.car_icon{
   width: 60px;
   height: 49px;
   position: relative;
@@ -97,15 +95,18 @@ $::before{
   font-family: "Alegreya Sans";
   font-size: 16px;
   font-weight: 400;
-  margin: 0px 46px 0px 48px; }
-  .car_icon:before {
+  margin: 0px 46px 0px 48px;
+  
+  &:before {
     content: "";
     position: absolute;
     width: 50px;
     height: 40px;
     display: block;
     background: url(../img/icon_png/car.png);
-    right: 70px; }
+    right: 70px;
+  
+  }
 
 .tape_acon {
   width: 57px;
@@ -114,12 +115,15 @@ $::before{
   color: #ffffff;
   font-family: "Alegreya Sans";
   font-size: 16px;
-  font-weight: 400; }
-  .tape_acon:before {
+  font-weight: 400;
+  
+   &:before {
     content: "";
     position: absolute;
     width: 42px;
     height: 42px;
     display: block;
     background: url(../img/icon_png/tape.png);
-    right: 67px; }
+    right: 67px;
+   }
+  }
