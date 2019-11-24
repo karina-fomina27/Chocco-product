@@ -1,9 +1,11 @@
+
 .walcome-page {
   background-image: url(/img/bg-1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
  }
+
   .main__container{
   display: flex;
   align-items: center;
@@ -24,6 +26,7 @@ text-transform: uppercase;
   margin: 0 5px 0 0; 
 }
 }
+
 .content__title {
   width: 404px;
   height: 160px;
@@ -105,8 +108,8 @@ text-transform: uppercase;
     display: block;
     background: url(../img/icon_png/car.png);
     right: 70px;
-  
   }
+}
 
 .tape_acon {
   width: 57px;
@@ -126,4 +129,4 @@ text-transform: uppercase;
     background: url(../img/icon_png/tape.png);
     right: 67px;
    }
-  }
+}
