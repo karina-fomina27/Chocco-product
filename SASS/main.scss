@@ -1,14 +1,19 @@
 
-@import"base/base.scss";
-@import"base/fonts.scss";
-@import"base/normalise.scss";
+@import"./base/base.scss";
+@import"./base/fonts.scss";
+@import"./base/normalise.scss";
 
-@import"blocks/about-us.scss";
-@import"blocks/fixed-menu.scss";
-@import"blocks/footer.scss";
-@import"blocks/header.scss";
-@import"blocks/nav.scss";
+@import"./blocks/about-us.scss";
+@import"./blocks/fixed-menu.scss";
+@import"./blocks/footer.scss";
+@import"./blocks/header.scss";
+@import"./blocks/nav.scss";
 
 
-@import"section/reviews.scss";
-@import"section/welcome.scss"
+@import"./section/reviews.scss";
+@import"./section/welcome.scss";
+@import "./section/team.scss";
+@import "./section/video";
+@import "./section/form.scss";
+@import "./section/map.scss";
+@import "./section/product.scss";

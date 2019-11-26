@@ -118,3 +118,6 @@
     display: block;
     background: url(../img/icon_png/tape.png);
     right: 67px; }
+
+.left_img {
+  margin: 0 0px 0px 60px; }

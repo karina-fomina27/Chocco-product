@@ -1,0 +1,76 @@
+.berry{
+  display: block;
+  position: absolute;
+  right: 0;
+  top:-30%;
+  }
+  
+  
+  .team__title{
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  }
+ 
+.team__container{
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 1100px;
+}
+
+.team__wrap{
+display: flex;
+}
+
+.team__inner{
+  
+}
+.team__img{
+ 
+}
+  
+.team__photo{
+ 
+}
+
+.team__description{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.team__name{
+  position: relative;
+    font-size: 1.313em;
+    font-weight: 500;
+    align-self: center;
+    cursor: pointer;
+    color: #323232;
+
+&::before{
+  content: "";
+width: 9px;
+height: 7px;
+background-color: #0f5a47;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -11%;
+}
+}
+
+.team__slider{
+
+}
+
+.team__post{
+  height: 0;
+  min-height: 25px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+

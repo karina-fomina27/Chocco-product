@@ -1,18 +1,18 @@
 
-.welcome-page {
-  background-image: url("../img/welcome.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
- background-size: cover;
+.welcome-page{
+  background: url("../img/welcome.jpg") center center /cover no-repeat;
+  position: relative;
  }
 
   .main{
+
   &__container{
   display: flex;
   align-items: center;
   justify-content: center;
+  }
 }
-}
+
 .icon-tel{
 color: #ffffff;
 font-family: "Alegreya Sans";
@@ -134,4 +134,12 @@ text-transform: uppercase;
 
 .left_img{
  margin: 0 0px 0px 60px; 
+}
+
+.content__right{
+width: 40%;
+}
+
+.content__left{
+width: 60%;
 }
