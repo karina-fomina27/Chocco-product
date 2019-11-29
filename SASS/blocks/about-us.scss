@@ -52,26 +52,16 @@ width: 125px;
 height: 125px;
 background-color: #f2f5f4;
 border-radius: 50%;
-margin: 0 auto;
+margin: 1.9375rem auto;
  }
-.img-1{
- background-image: url(../img/icon_png/icon1.png);
-background-repeat: no-repeat;
-background-position: center;
 
-}
-.img-2{
-  background-image: url(../img/icon_png/icon3.png);
- background-repeat: no-repeat;
- background-position: center;
- 
- }
- .img-3{
-  background-image: url(../img/icon_png/icon2.png);
- background-repeat: no-repeat;
- background-position: center;
- 
- }
+ .svg{
+  width: 70px;
+  height: 121px;
+  fill: #f2f5f4;
+  ;
+    }
+
  .discription__title{
 color: #000000;
 font-family: "Alegreya Sans";
@@ -81,22 +71,23 @@ margin: 25px 0 0 0;
  }
 
  .discription__txt{
- /* Style for "Натурально" */
 width: 318px;
 color: #666666;
 font-family: "Alegreya Sans";
 font-size: 18px;
 font-weight: 300; 
  }
+ 
  .discription__item{
   position: relative;
+  margin:0 0 0 45px;
   
  }
  .discription__item:first-child::before{
   content: "";
     position: absolute;
-    top:53px;
-    right: -84px;
+    top: 78px;
+    right: -34px;
     width: 67px;
     height: 21px;
     background-image: url(../img/icon_png/dots.png);
@@ -106,8 +97,8 @@ font-weight: 300;
  .discription__item:nth-child(2)::before{
   content: "";
     position: absolute;
-    top:53px;
-    right: -84px;
+    top: 78px;
+    right: -34px;
     width: 67px;
     height: 21px;
     background-image: url(../img/icon_png/dots.png);
@@ -118,4 +109,3 @@ font-weight: 300;
   content: url(../img/razz.png);
   position: relative;
  }
- 

@@ -13,6 +13,16 @@
   }
 }
 
+.leaf,
+.delivery,
+.tape{
+fill:transparent;
+stroke: #b0f7ff;
+width: 732px;
+height: 154px;
+}
+
+
 .icon-tel{
 color: #ffffff;
 font-family: "Alegreya Sans";
@@ -48,89 +58,36 @@ text-transform: uppercase;
   margin: 0 0 70px 0;
   }
 
-.content__button {
+.content-button {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
-  font-family: "Alegreya Sans - Extra Bold";
+  font-family:"Alegreya Sans";
   font-size: 19px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  color: #0f5a47;
   border-radius: 30px;
-  padding: 24px 34px ;
+  padding: 20px 34px ;
+
+  &:active{
+  background-color: #CCCFCF;
+  opacity: 0.2;
+ }
+
+  &:hover{
+    background-color: #61c4d9;
+    opacity: 1.2;
+  }
   }
 
-.content__icon {
+ .content__icon {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-between;
-  margin: 68px 0 50px 50px; 
+  margin: 68px 0 50px 0; 
 }
 
-.leaf_icon {
-  width: 84px;
-  height: 52px;
-  color: white;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 400;
-  position: relative; 
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 44px;
-    height: 41px;
-    display: block;
-    background: url(../img/icon_png/leaf.png) no-repeat;
-    right: 90px; 
-  }
-}
-
-.car_icon {
-  width: 60px;
-  height: 49px;
-  position: relative;
-  color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0px 46px 0px 48px;
-  
-  &:before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    display: block;
-    background: url(../img/icon_png/car.png);
-    right: 70px;
-  }
-}
-
-.tape_acon {
-  width: 57px;
-  height: 49px;
-  position: relative;
-  color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 400;
-  
-   &:before {
-    content: "";
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    display: block;
-    background: url(../img/icon_png/tape.png);
-    right: 67px;
-   }
-}
 
 .left_img{
  margin: 0 0px 0px 60px; 
@@ -142,4 +99,27 @@ width: 40%;
 
 .content__left{
 width: 60%;
+}
+
+
+.delivery__txt{
+color: #ffffff;
+font-family: "Alegreya Sans";
+font-size: 16px;
+font-weight: 400;
+}
+
+.leaf__txt{
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tape__txt{
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400;
+
 }

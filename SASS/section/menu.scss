@@ -1,0 +1,75 @@
+.menu{
+background: url(../img/menu-bg.png);
+background-repeat: no-repeat;
+background-size: cover;
+// filter: brightness(87%);
+color: #ffffff;
+
+&::before{
+content: "";
+background-color:#000;
+width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0;
+    opacity: .2;
+}
+}
+
+.berry-3{
+display: block;
+position: absolute;
+top:-9%;
+left: 33px;
+}
+
+ .menu__title{
+font-family: "Alegreya Sans";
+font-size: 48px;
+font-weight: 700;
+text-transform: uppercase;
+position: absolute;
+padding-left: 7.28%;
+padding-top: 9.46%;
+color: inherit;
+z-index: 10;
+}
+
+.menu__accordion {
+  display: flex;
+  justify-content: flex-end;
+  color: inherit;
+  cursor: pointer;
+}
+
+.accordion__item{
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.accordion__img {
+  position: relative;
+}
+
+.accordion__pic {
+  width: 7.25rem;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(45%);
+}
+
+.accordion__title{
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  transform: rotate(180deg);
+  color: inherit;
+  writing-mode: vertical-rl;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 500;
+}

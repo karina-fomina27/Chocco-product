@@ -5,23 +5,14 @@
   background-image: url(../img/berry.png);
   background-repeat: no-repeat;
   background-position: 86% 2.5%;
- 
-  &::before{
-    content: "";
-    width: 135px; 
-    height:193px;
-    position: absolute;
-    left: 0;
-    bottom: -20%;
-    z-index: 20;
-    display: block;
-    background: url(../img/3-layers.png) center no-repeat;
-    background-size: cover;
-  }
-  
+  padding: 0 0 60px 0;
  }
 
- .reviews__container{
+
+ .container__reviews{
+  padding-top: 4.3125rem ;
+ }
+ .reviews__wrap{
 width: 100%;
 margin:0 auto;
 display: flex;

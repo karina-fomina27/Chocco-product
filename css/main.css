@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i");
 html, body {
   width: 100%;
   height: 100%; }
@@ -15,7 +15,8 @@ p {
   margin: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -30,7 +31,12 @@ h6 {
   margin: 0;
   font-weight: normal; }
 
-section {
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 3px solid #dde3bd; }
+
+.section {
   height: 100vh;
   position: relative; }
 
@@ -39,113 +45,83 @@ section {
   width: 100%;
   margin: 0 auto; }
 
-/* @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i');
+@font-face {
+  font-family: 'Alegreya Sans';
+  src: url("/fonts/AlegreyaSans-Thin.woff2") format("woff2"), url("/fonts/AlegreyaSans-Thin.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Thin.ttf") format("truetype");
+  font-weight: 100; }
 
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-Thin.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-Thin.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-Thin.ttf') format("truetype");
+  src: url("/fonts/AlegreyaSans-ThinItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-ThinItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-ThinItalic.ttf") format("truetype");
   font-weight: 100;
-}
+  font-style: italic; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-ThinItalic.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-ThinItalic.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-ThinItalic.ttf') format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
+  src: url("/fonts/AlegreyaSans-Light.woff2") format("woff2"), url("/fonts/AlegreyaSans-Light.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Light.ttf") format("truetype");
+  font-weight: 300; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-Light.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-Light.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-Light.ttf') format("truetype");
+  src: url("/fonts/AlegreyaSans-LightItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans/AlegreyaSans-LightItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
-}
+  font-style: italic; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-LightItalic.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans/AlegreyaSans-LightItalic.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-LightItalic.ttf') format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
+  src: url("/fonts/fonts/") format("woff2"), url("/fonts/AlegreyaSans-Regular.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/fonts/') format('woff2'),
-  url('/fonts/AlegreyaSans-Regular.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-Regular.ttf') format("truetype");
+  src: url("/fonts/AlegreyaSans-Italic.woff2") format("woff2"), url("/fonts/AlegreyaSans-Italic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Italic.ttf") format("truetype");
   font-weight: 400;
-}
+  font-style: italic; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-Italic.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-Italic.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-Italic.ttf') format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
+  src: url("/fonts/AlegreyaSans-Medium.woff2") format("woff2"), url("/fonts/AlegreyaSans-Medium.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-Medium.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-Medium.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-Medium.ttf') format("truetype");
+  src: url("/fonts/AlegreyaSans-MediumItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-MediumItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-MediumItalic.ttf") format("truetype");
   font-weight: 500;
-}
+  font-style: italic; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-MediumItalic.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-MediumItalic.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-MediumItalic.ttf') format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
+  src: url("/fonts/AlegreyaSans-Bold.woff2") format("woff2"), url("/fonts/AlegreyaSans-Bold.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-Bold.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-Bold.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-Bold.ttf') format("truetype");
+  src: url("/fonts/AlegreyaSans-BoldItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-BoldItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-BoldItalic.ttf") format("truetype");
   font-weight: 700;
-}
+  font-style: italic; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-BoldItalic.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-BoldItalic.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-BoldItalic.ttf') format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
+  src: url("/fonts/AlegreyaSans-ExtraBold.woff2") format("woff2"), url("/fonts/AlegreyaSans/AlegreyaSans-ExtraBold.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-ExtraBold.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans/AlegreyaSans-ExtraBold.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-ExtraBold.ttf') format("truetype");
+  src: url("/fonts/AlegreyaSans-ExtraBoldItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-ExtraBoldItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype");
   font-weight: 800;
-}
+  font-style: italic; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-ExtraBoldItalic.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-ExtraBoldItalic.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-ExtraBoldItalic.ttf') format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
+  src: url("/fonts/AlegreyaSans-Black.woff2") format("woff2"), url("/fonts/AlegreyaSans-Black.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Black.ttf") format("truetype");
+  font-weight: 900; }
+
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-Black.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-Black.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-Black.ttf') format("truetype");
+  src: url("/fonts/AlegreyaSans-BlackItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-BlackItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-BlackItalic.ttf") format("truetype");
   font-weight: 900;
-}
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url('/fonts/AlegreyaSans-BlackItalic.woff2') format('woff2'),
-  url('/fonts/AlegreyaSans-BlackItalic.woff') format('woff'),
-  url('/fonts/fontsgugle/AlegreyaSans-BlackItalic.ttf') format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}*/
+  font-style: italic; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -518,22 +494,12 @@ template {
   height: 125px;
   background-color: #f2f5f4;
   border-radius: 50%;
-  margin: 0 auto; }
+  margin: 1.9375rem auto; }
 
-.img-1 {
-  background-image: url(../img/icon_png/icon1.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.img-2 {
-  background-image: url(../img/icon_png/icon3.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.img-3 {
-  background-image: url(../img/icon_png/icon2.png);
-  background-repeat: no-repeat;
-  background-position: center; }
+.svg {
+  width: 70px;
+  height: 121px;
+  fill: #f2f5f4; }
 
 .discription__title {
   color: #000000;
@@ -543,7 +509,6 @@ template {
   margin: 25px 0 0 0; }
 
 .discription__txt {
-  /* Style for "Натурально" */
   width: 318px;
   color: #666666;
   font-family: "Alegreya Sans";
@@ -551,13 +516,14 @@ template {
   font-weight: 300; }
 
 .discription__item {
-  position: relative; }
+  position: relative;
+  margin: 0 0 0 45px; }
 
 .discription__item:first-child::before {
   content: "";
   position: absolute;
-  top: 53px;
-  right: -84px;
+  top: 78px;
+  right: -34px;
   width: 67px;
   height: 21px;
   background-image: url(../img/icon_png/dots.png);
@@ -566,8 +532,8 @@ template {
 .discription__item:nth-child(2)::before {
   content: "";
   position: absolute;
-  top: 53px;
-  right: -84px;
+  top: 78px;
+  right: -34px;
   width: 67px;
   height: 21px;
   background-image: url(../img/icon_png/dots.png);
@@ -605,6 +571,65 @@ template {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+
+.footer {
+  background-color: #ffffff;
+  position: obsolute; }
+
+.container__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.contacts {
+  padding: 20px; }
+
+.contacts {
+  width: 50%; }
+
+.adress {
+  color: #010101;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 23.82px; }
+
+.phone__adress {
+  width: 12px;
+  height: 11px; }
+
+.phone__footer {
+  color: #0f5a47;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.social__link {
+  margin: 26px 20px 0 0; }
+
+.social__icon {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.social__img {
+  width: 25px;
+  height: 15px;
+  fill: rgba(0, 0, 0, 0.3); }
+  .social__img:hover {
+    fill: #000;
+    -webkit-transition: fill .2s;
+    -o-transition: fill .2s;
+    transition: fill .2s; }
 
 .header__container {
   padding-top: 20px;
@@ -645,20 +670,13 @@ template {
   position: relative;
   background-image: url(../img/berry.png);
   background-repeat: no-repeat;
-  background-position: 86% 2.5%; }
-  .reviews::before {
-    content: "";
-    width: 135px;
-    height: 193px;
-    position: absolute;
-    left: 0;
-    bottom: -20%;
-    z-index: 20;
-    display: block;
-    background: url(../img/3-layers.png) center no-repeat;
-    background-size: cover; }
+  background-position: 86% 2.5%;
+  padding: 0 0 60px 0; }
 
-.reviews__container {
+.container__reviews {
+  padding-top: 4.3125rem; }
+
+.reviews__wrap {
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -774,6 +792,14 @@ template {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.leaf,
+.delivery,
+.tape {
+  fill: transparent;
+  stroke: #b0f7ff;
+  width: 732px;
+  height: 154px; }
+
 .icon-tel {
   color: #ffffff;
   font-family: "Alegreya Sans";
@@ -804,6 +830,361 @@ template {
   font-weight: 400;
   margin: 0 0 70px 0; }
 
+.content-button {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
+  box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
+  font-family: "Alegreya Sans";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0f5a47;
+  border-radius: 30px;
+  padding: 20px 34px; }
+  .content-button:active {
+    background-color: #CCCFCF;
+    opacity: 0.2; }
+  .content-button:hover {
+    background-color: #61c4d9;
+    opacity: 1.2; }
+
+.content__icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 68px 0 50px 0; }
+
+.left_img {
+  margin: 0 0px 0px 60px; }
+
+.content__right {
+  width: 40%; }
+
+.content__left {
+  width: 60%; }
+
+.delivery__txt {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400; }
+
+.leaf__txt {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400; }
+
+.tape__txt {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400; }
+
+.berry {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -30%; }
+
+.team {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Alegreya Sans",sans-serif; }
+
+.team__container {
+  margin-top: 3.2222rem; }
+
+.section-title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 4.2222rem; }
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.team__item:first-child {
+  margin-left: 0; }
+
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 25%; }
+
+.team__name {
+  position: relative;
+  color: #323232;
+  font-family: "Alegreya Sans";
+  font-size: 21px;
+  font-weight: 500; }
+
+.team__post {
+  color: #281e1e;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 500;
+  margin: 13px 0 6px 0;
+  height: 0;
+  overflow: hidden; }
+
+.team__duties {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 300;
+  height: 0;
+  overflow: hidden; }
+
+.team__item .team__item_active {
+  display: block; }
+
+.video {
+  background-color: #f8faf9; }
+
+.berry2 {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -17%; }
+
+.blueberries {
+  display: block;
+  position: absolute;
+  left: 11%;
+  top: 70%; }
+
+.blackberry {
+  display: block;
+  position: absolute;
+  right: -31px;
+  top: -20%; }
+
+.leaf_form {
+  display: block;
+  position: absolute;
+  top: 60%;
+  right: 4%; }
+
+.order {
+  background-image: url(../img/bg-form.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.form__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 28.75rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-top: 86px; }
+
+.order__container {
+  padding: 86px 0 0 0; }
+
+.form__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.title__form {
+  color: #0f5a47;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+
+.label__txt {
+  color: #0f5a47;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px; }
+
+.label__input {
+  width: 13.75rem;
+  height: 3.75rem; }
+
+.form__street input {
+  width: 28.75rem; }
+
+.form__number input {
+  width: 6.25rem;
+  margin: 0 20px 0 0; }
+
+.label__textarea {
+  width: 25.5556rem;
+  height: 10rem; }
+
+.radio__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.label__radio input[type="radio"] {
+  display: none; }
+
+.label__radio input[type="radio"] ~ span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 0 3px 25px;
+  color: #0f5a47;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.05px;
+  margin: 20px 29px 0 0; }
+
+.label__radio input[type="radio"] ~ span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 18%; }
+
+.label__radio input[type="radio"]:checked ~ span::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #0f5a47; }
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+  position: absolute; }
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  color: #0f5a47;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.05px;
+  cursor: pointer;
+  margin-bottom: 2.3333rem; }
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff; }
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  border-radius: 2px; }
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+  border-radius: 100%; }
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 3px;
+  top: 4px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 4px solid #0f5a47;
+  border-bottom: 4px solid #0f5a47;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #0f5a47; }
+
+input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0; }
+
+input[type="checkbox"]:checked + label:after {
+  opacity: 1; }
+
 .content__button {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 10px rgba(63, 63, 63, 0.25);
@@ -816,159 +1197,121 @@ template {
   border-radius: 30px;
   padding: 24px 34px; }
 
-.content__icon {
-  width: 100%;
+.buttons__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-between;
-  margin: 68px 0 50px 50px; }
-
-.leaf_icon {
-  width: 84px;
-  height: 52px;
-  color: white;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 400;
-  position: relative; }
-  .leaf_icon:before {
-    content: "";
-    position: absolute;
-    width: 44px;
-    height: 41px;
-    display: block;
-    background: url(../img/icon_png/leaf.png) no-repeat;
-    right: 90px; }
-
-.car_icon {
-  width: 60px;
-  height: 49px;
-  position: relative;
-  color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0px 46px 0px 48px; }
-  .car_icon:before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 40px;
-    display: block;
-    background: url(../img/icon_png/car.png);
-    right: 70px; }
-
-.tape_acon {
-  width: 57px;
-  height: 49px;
-  position: relative;
-  color: #ffffff;
-  font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 400; }
-  .tape_acon:before {
-    content: "";
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    display: block;
-    background: url(../img/icon_png/tape.png);
-    right: 67px; }
-
-.left_img {
-  margin: 0 0px 0px 60px; }
-
-.content__right {
-  width: 40%; }
-
-.content__left {
-  width: 60%; }
-
-.berry {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: -30%; }
-
-.team__title {
-  color: #0d0d0d;
-  font-family: "Alegreya Sans";
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.team__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  max-width: 1100px; }
+  margin-right: 1.6111rem; }
 
-.team__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+.button__order {
+  padding: 16px 38px;
+  background-color: #0f5a47;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-right: 1.6111rem; }
 
-.team__description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.team__name {
-  position: relative;
-  font-size: 1.313em;
-  font-weight: 500;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  cursor: pointer;
-  color: #323232; }
-  .team__name::before {
-    content: "";
-    width: 9px;
-    height: 7px;
-    background-color: #0f5a47;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: -11%; }
-
-.team__post {
-  height: 0;
-  min-height: 25px;
-  overflow: hidden;
-  opacity: 0; }
-
-.video {
-  background-color: #f8faf9; }
-
-.form {
-  background-image: url(/img/bg-form.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+.button__clear {
+  color: #0f5a47;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.05px; }
 
 .map {
-  background-image: url(/img/map.jpg);
+  background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
 .product__prise {
   background-color: #f8faf9; }
+
+.muesli {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -28%; }
+
+.menu {
+  background: url(../img/menu-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff; }
+  .menu::before {
+    content: "";
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0;
+    opacity: .2; }
+
+.berry-3 {
+  display: block;
+  position: absolute;
+  top: -9%;
+  left: 33px; }
+
+.menu__title {
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  padding-left: 7.28%;
+  padding-top: 9.46%;
+  color: inherit;
+  z-index: 10; }
+
+.menu__accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: inherit;
+  cursor: pointer; }
+
+.accordion__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.accordion__img {
+  position: relative; }
+
+.accordion__pic {
+  width: 7.25rem;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-filter: brightness(45%);
+  filter: brightness(45%); }
+
+.accordion__title {
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  color: inherit;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: "Alegreya Sans";
+  font-size: 48px;
+  font-weight: 500; }

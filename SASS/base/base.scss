@@ -19,6 +19,7 @@ html, body{
   
   a{
   text-decoration: none;
+  cursor: pointer;
   }
   
   *{
@@ -34,8 +35,15 @@ html, body{
     margin: 0;
     font-weight: normal;
   }
-  
-    section{
+
+
+input:focus,
+textarea:focus{
+ outline: none;
+ border: 3px solid #dde3bd;
+  }
+
+    .section{
     height:100vh;
     position: relative;
     

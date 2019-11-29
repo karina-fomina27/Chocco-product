@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <section class="welcome-page">
+    <section class="section welcome-page">
       <div class="container">
       <header class="header">
         <div class="header__container">
@@ -36,16 +36,28 @@
       <h1 class="content__title">
         натуральные шоколадные батончики</h1>
       <p class="content__txt">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-      <a class="content__button">Заказать</a>
+      <a class="content-button">Заказать</a>
       <div class="content__icon">
-        <span class="leaf_icon">100% 
-  натуральный 
-  продук</span>
-        <span class="car_icon">3-5 дней
-  доставка 
-  по РФ</span>
-        <span class="tape_acon">Не портит
-  фигуру</span>
+      <svg class="leaf">
+      <use xlink:href="../img/sprite.svg#leaf">
+      </use>
+      </svg>
+      <div class="leaf__txt">100% 
+        натуральный 
+        продукт</div>
+      <svg class="delivery">
+          <use xlink:href="./img/sprite.svg#delivery">
+          </use>
+          </svg>
+          <div class="delivery__txt">3-5 дней
+            доставка 
+            по РФ</div>
+          <svg class="tape">
+          <use xlink:href="./svg/sprite.svg#tape">
+            </use>
+          </svg>
+          <div class="tape__txt">Не портит
+            фигуру</div>
       </div>
     </div>
     <div class="content__left">
@@ -54,7 +66,7 @@
   </div>  
 </div>  
 </section>
-<section class="about-us">
+<section class="section about-us">
   <div class="container about-us__wrap">
     <div class="info">
       <h1 class="title info-title">почему chocco?</h1>
@@ -63,21 +75,34 @@
   
   <ul class="discription">
     <li class="discription__item">
-      <div class="discription__icon img-1"></div>
+      <div class="discription__icon ">
+        <svg class="svg">
+          <use xlink:href="./svg/sprite.svg#usefull">
+          </use></svg></div>
       <div class="discription__content">
         <div class="discription__title">Полезно</div>
         <div class="discription__txt">Натуральность - ключевое качество нашей продукции. Мы используем только природные ингредиенты.</div>
       </div>
     </li>
     <li class="discription__item">
-      <div class="discription__icon img-2"></div>
+      <div class="discription__icon ">
+          <svg class="svg">
+              <use xlink:href="./svg/sprite.svg#tasty">
+              </use></svg>
+      </div>
       <div class="discription-content ">
         <div class="discription__title">Вкусно</div>
         <div class="discription__txt">Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков.</div>
       </div>
     </li>
+    
     <li class="discription__item">
-      <div class="discription__icon img-3"></div>
+      <div class="discription__icon ">
+        <svg class="svg">
+          <use xlink:href="./svg/sprite.svg#nutritionally">
+          </use>
+          </svg>
+      </div>
       <div class="discription-content">
         <div class="discription__title">Питательно</div>
         <div class="discription__txt">Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.</div>
@@ -88,69 +113,116 @@
 </section>
 </div>
 <section class="section product__prise">
-    <div class="container"></div>
+<img class="muesli" src="./img/razz.png" alt="berry">
+    <div class="container">
+    </div>
 </section>
-<section class=" team">
+<section class="section team">
   <img src="./img/berry1.png" alt="" class="berry">
+  <h2 class="section-title">
+    Команда
+  </h2>
 <div class="container team__container">
-  <h2 class="team__title">Команда</h2>
-  <div class="team__wrap">
-    <div class="team__inner">
+  <ul class="team__list">
+    <li class="team__item">
       <div class="team__img">
-        <img src="./img/photoBoris.jpg" alt="" class="team__photo">
+        <img src="./img/photoBoris.jpg" alt="Avatar" class="team__img">
       </div>
-      <div class="team__description">
-        <div class="team__name">Борис Федорович
-          <div class="team__slider"></div>
+      <div class="team__content">
+        <h3 class="team__title">
+          <a href="#"  class="team__name">Борис Федорович</a>
+        </h3>
+        <div class="team__post">
+          Главный технолог
         </div>
-        <div class="team__post">Главный технолог
-        <p class="slider-text">Отвечает за вкусовые качества и калорийность.</p>
-      </div>
-    </div>
-    </div>
-    <div class="team__inner">
+        <div class="team__duties">
+          Отвечает за вкусовые качества и калорийность.
+        </div>
+      </div>	
+    </li>
+    <li class="team__item">
       <div class="team__img">
-        <img src="./img/photo-Alla.jpg" alt="" class="team__photo">
+        <img src="./img/photo-Alla.jpg" alt="Avatar" class="team-grid__img">
       </div>
-      <div class="team__description">
-        <div class="team__name">Алла Иванова
-          <div class="slider"></div>
+      <div class="team__content">
+        <h3 class="team__title">
+          <a href="#"  class="team__name">Алла Иванова</a>
+        </h3>
+        <div class="team__post">
+          Специалист по упаковке
         </div>
-        <div class="team__post">Специалист по упаковке
-        <p class="slider-text">Автор запоминающегося стиля наших батончиков.</p>
-      </div>
-      </div>
-    </div>
-    <div class="team__inner">
+        <div class="team__duties">
+          Автор запоминающегося стиля наших батончиков.
+        </div>
+      </div>	
+    </li>
+    <li class="team__item team__item_active">
       <div class="team__img">
-        <img src="./img/photo-Kirill.jpg" alt="" class="team__photo">
+        <img src="./img/photo-Kirill.jpg" alt="Avatar" class="team__img">
       </div>
-      <div class="team__description">
-        <div class="team__name slide__open">Кирилл Матросов
-          <div class="slider__closed"></div>
+      <div class="team__content">
+        <h3 class="team__title">
+          <a href="#" class="team__name">Кирилл Матросов</a>
+        </h3>
+       
+        <div class="team__post">
+          Оператор
         </div>
-        <div class="team__post">Оператор
-        <p class="slider-text">С радостью поможет подобрать батончики и оформить заказ.</p>
-      </div>
-    </div>
-    </div>
-    <div class="team__inner">
+        <div class="team__duties">
+          С радостью поможет подобрать батончики и оформить заказ. 
+        </div>
+      </div>	
+    </li>
+    <li class="team__item">
       <div class="team__img">
-        <img src="./img/photo-Mila.jpg" alt="" class="team__photo">
+        <img src="./img/photo-Mila.jpg" alt="Avatar" class="team__img">
       </div>
-      <div class="team__description">
-        <div class="team__name">Мила Рыжкова
-          <div class="slider"></div>
+      <div class="team__content">
+        <h3 class="team__title">
+          <a href="#" class="team__name">Мила Рыжкова</a>
+        </h3>
+        <div class="team__post">
+          PR, маркетинг
         </div>
-        <div class="team__post">PR, маркетинг
-        <p class="slider-text">По всем вопросам сотрудничества и рекламы писать только Миле.</p>
-      </div>
-    </div>
-  </div>
+        <div class="team__duties">
+          По всем вопросам сотрудничества и рекламы писать только Миле. 
+        </div>
+      </div>	
+    </li>
+  </ul>
 </div>
-</section> 
-<div class="reviews">
-  <div class=" container reviews__container">
+</section>
+<section class="section menu">
+  <img class="berry-3" src="./img/berry3.png" alt="berry">
+<h2 class="menu__title">Меню</h2>
+<ul class="menu__accordion">
+  <li class="accordion__item accordion__item--active">
+  <div class="accordion__img">
+<img src="./img/kokos.jpg" alt="Кокосовое масло" class="accordion__pic">
+<h2 class="accordion__title">Батончики с молоком</h2>
+</div>
+<p class="accordion__txt"></p>
+  </li>
+  <li class="accordion__item accordion__item--active">
+      <div class="accordion__img">
+    <img src="./img/Granola.jpg" alt="Мед и фрукты" class="accordion__pic">
+    <h2 class="accordion__title">С мёдом и фруктами</h2>
+    </div>
+    <p class="accordion__txt"></p>
+      </li>
+      <li class="accordion__item accordion__item--active">
+          <div class="accordion__img">
+        <img src="./img/shutterstock.jpg" alt="Ягоды" class="accordion__pic">
+        <h2 class="accordion__title">Дикие ягоды</h2>
+        </div>
+        <p class="accordion__txt"></p>
+          </li>
+</ul>
+</section>
+
+<section class="section reviews">
+    <div class="container container__reviews">
+  <div class="reviews__wrap">
     <h2 class="reviews-title">Отзывы</h2>
   </div>
   <div class="reviews-content">
@@ -185,15 +257,122 @@
     </li>
 </ul>
 </div>
-<section class="video">
+</section>
+<section class="section video">
+<img src="./img/3-layers.png" alt="berry" class="berry2">
 <div class="container"></div>
 </section>
-<section class="form">
-
+<section class="section order">
+<div class="container order__container">
+<img class="blackberry" src="./img/blackberry.png" alt="">
+<h2 class="title__form">Закажите доставку</h2>
+ <form action="#" class="form">
+  <div class="form__col">
+    <div class="form__wrap">
+      <div class="form__row">
+        <label class="form__label">
+          <div class="label__txt">Имя</div>
+          <input type="text" class="label__input" name="name" >
+        </label>
+      </div>
+      <div class="form__row">
+        <label class="form__label">
+          <div class="label__txt">Телефон</div>
+          <input type="text" class="label__input" name="phone" >
+        </label> 
+      </div>
+      <div class="form__row form__street">
+        <label class="form__label">
+          <div class="label__txt">Улица</div>
+          <input type="text" class="label__input" name="street">
+        </label> 
+      </div>
+      <div class="form__row form__number">
+        <label class="form__label">
+          <div class="label__txt">Дом</div>
+          <input type="text" class="label__input" name="phone" >
+        </label> 
+        <label class="form__label">
+          <div class="label__txt">Корпус</div>
+          <input type="text" class="label__input" name="phone" >
+        </label> 
+        <label class="form__label">
+          <div class="label__txt">Квартира</div>
+          <input type="text" class="label__input" name="phone" >
+        </label> 
+        <label class="form__label">
+          <div class="label__txt">Этаж</div>
+          <input type="text" class="label__input" name="phone" >
+        </label> 
+      </div>
+    </div>
+    </div>
+    <div class="form__col">
+        <label class="form__label">
+          <div class="label__txt">Комментарий</div>
+    <textarea class="label__textarea" name="comment" id="" cols="30" rows="10"></textarea>
+      </label> 
+      <div class="radio__wrap">
+          <label class="label__radio">
+          <input type="radio">
+          <span>Потребуется сдача</span>
+          </label> 
+          <label class="label__radio">
+              <input type="radio">
+              <span>Оплата по карте</span>
+              </label>      
+      </div>       
+      <div class="checkbox__wrap">
+          <input type="checkbox" id="cb1">
+           <label for="cb1">Не перезванивать</label>
+          </div>
+          <div class="buttons__wrap">
+          <a class="button__order">Заказать</a>
+          <a class="button__clear">Очистить</a>
+        </div>
+    </div>
+    <img class="leaf_form" src="./img/leaf_form.png" alt="">
+ </form>
+ <img class="blueberries" src="./img/blueberries.png" alt="">
+</div>
 </section>
-<section class="map">
+<section class="section map">
   <div class="container"></div>
 </section>
+
+<footer class="footer">
+<div class=" container container__footer">
+<div class="contacts">
+<h4 class="adress">Москва, ул.Новый Арбат, д.31/12</h4>
+<svg class="phone__adress">
+    <use xlink:href="./svg/sprite.svg#phone"></use>
+    </svg> 
+<a href="#" class="phone__footer">8 800 903 90 90</a>
+</div>
+ <div class="social__icon">
+<a href="#" class="social__link">
+<svg class="social__img vk">
+<use xlink:href="./img/sprite.svg#vk"></use>
+</svg></a>
+<a href="#" class="social__link">
+  <svg class="social__img fb">
+    <use xlink:href="./svg/sprite.svg#fb"></use>
+    </svg></a></a>
+<a href="#" class="social__link">
+    <svg class="social__img inst">
+        <use xlink:href="./svg/sprite.svg#inst"></use>
+        </svg> 
+</a>
+<a href="#" class="social__link">
+    <svg class="social__img tw">
+    <use xlink:href="./svg/sprite.svg#tw"></use>
+    </svg> 
+</a>
+ </div>
+</div> 
+
+
+</footer>
 </div> 
 
 <ul class="fixed-menu">
