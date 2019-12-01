@@ -5,8 +5,8 @@
   vertical-align: middle;
   display: none;
 
-  @include tablets{
-  display: flex;
+  @include tablets {
+    display: flex;
   }
 }
 

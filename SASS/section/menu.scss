@@ -1,14 +1,14 @@
-.menu{
-background: url(../img/menu-bg.png);
-background-repeat: no-repeat;
-background-size: cover;
-// filter: brightness(87%);
-color: #ffffff;
+.menu {
+  background: url(../img/menu-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // filter: brightness(87%);
+  color: #ffffff;
 
-&::before{
-content: "";
-background-color:#000;
-width: 100%;
+  &::before {
+    content: "";
+    background-color: #000;
+    width: 100%;
     height: 100%;
     display: block;
     position: absolute;
@@ -16,26 +16,26 @@ width: 100%;
     left: rem(0px);
     right: 0;
     opacity: .2;
-}
-}
-
-.berry-3{
-display: block;
-position: absolute;
-top:-9%;
-left: rem(33px);
+  }
 }
 
- .menu__title{
-font-family: "Alegreya Sans";
-font-size: rem(48px);
-font-weight: 700;
-text-transform: uppercase;
-position: absolute;
-padding-left: 7.28%;
-padding-top: 9.46%;
-color: inherit;
-z-index: 10;
+.berry-3 {
+  display: block;
+  position: absolute;
+  top: -9%;
+  left: rem(33px);
+}
+
+.menu__title {
+  font-family: "Alegreya Sans";
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  padding-left: 7.28%;
+  padding-top: 9.46%;
+  color: inherit;
+  z-index: 10;
 }
 
 .menu__accordion {
@@ -45,7 +45,7 @@ z-index: 10;
   cursor: pointer;
 }
 
-.accordion__item{
+.accordion__item {
   position: relative;
   display: flex;
   overflow: hidden;
@@ -62,7 +62,7 @@ z-index: 10;
   filter: brightness(45%);
 }
 
-.accordion__title{
+.accordion__title {
   position: absolute;
   bottom: 5%;
   left: 25%;

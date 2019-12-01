@@ -1,6 +1,5 @@
-
-.nav{
-margin-left: rem(50px);
+.nav {
+  margin-left: rem(50px);
 }
 
 .nav__link {
@@ -11,16 +10,17 @@ margin-left: rem(50px);
   line-height: rem(30px);
   margin: 0 rem(30px) 0 0;
 
-  &:hover{
-  color: #00accf;
+  &:hover {
+    color: #00accf;
   }
+
   @include tablets {
-    display: none;  
-    }
+    display: none;
+  }
 }
 
 .nav__menu {
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}

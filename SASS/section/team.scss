@@ -6,8 +6,8 @@
 
 .team {
 
-   
-@include tablets {
+
+  @include tablets {
     height: 100%;
   }
 }
@@ -28,26 +28,27 @@
 
 .team__list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: rem(20px);
- 
+
   @include tablets {
     flex-wrap: wrap;
     width: 80%;
     justify-content: center;
   }
-  @include phones{
-  width: 500px;
-  flex-wrap: wrap;
+
+  @include phones {
+    width: 500px;
+    flex-wrap: wrap;
   }
 }
 
 .team__item {
   position: relative;
 
+
   @include tablets {
-  margin-right: rem(20px);
+    margin-right: rem(20px);
   }
 }
 
@@ -58,9 +59,9 @@
   max-height: rem(290px);
   object-fit: contain;
 
-  @include phones{
-width: 142px;
-height: 185px;
+  @include phones {
+    width: 142px;
+    height: 185px;
   }
 }
 
