@@ -1,111 +1,169 @@
-
-.about-us{
-  position: relative; 
+.about-us {
+  position: relative;
   background-image: url(../img/leaf-pattern.png);
   background-repeat: no-repeat;
   background-position: 0 50%;
   text-align: center;
- }
 
- .about-us__wrap{
-display: flex;
-flex-direction: column;
-align-items: center;
- }
-.info{
-display: flex;
-text-align: center;
-flex-direction: column;
+  @include tablets {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include phones {
+    background-image: none;
+  }
+
 }
- .title{
-color: #0d0d0d;
-font-family: "Alegreya Sans";
-font-size: 48px;
-font-weight: 700;
-text-transform: uppercase;
-margin: 115px 0 0 0;
- }
 
- .info__txt{
-width: 406px;
-color: #666666;
-font-family: "Alegreya Sans";
-font-size: 18px;
-font-weight: 400;
-margin: 23px 0 0 0 ;
+.about-us__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
 
- }
 
- .discription{
-display: flex;
-justify-content: space-evenly;
-margin: 51px 0 0 0;
-
- }
- .discription__content{
+.info {
+  display: flex;
   text-align: center;
-  margin:35px 0 0 0;
- }
+  flex-direction: column;
+}
 
- .discription__icon{
-width: 125px;
-height: 125px;
-background-color: #f2f5f4;
-border-radius: 50%;
-margin: 1.9375rem auto;
- }
+.info-title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: rem(115px) 0 0 0;
 
- .svg{
-  width: 70px;
-  height: 121px;
+  @include tablets {
+    margin: 3.1875rem 0 0 0;
+  }
+}
+
+.info__txt {
+  width: rem(406px);
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 400;
+  margin: rem(23px) 0 0 0;
+}
+
+.discription {
+  display: flex;
+  justify-content: space-evenly;
+  margin: rem(51px) 0 0 0;
+
+  @include tablets {
+    flex-direction: column;
+    margin: 0.1875rem 0 0 0;
+    padding: 0 0 82px 0;
+  }
+
+}
+
+.discription__content {
+  text-align: center;
+  margin: rem(35px) 0 0 0;
+
+  @include phones {
+    text-align: left;
+    margin-left: 13px;
+  }
+}
+
+.discription__icon {
+  width: rem(125px);
+  height: rem(125px);
+  background-color: #f2f5f4;
+  border-radius: 50%;
+  margin: 1.9375rem auto;
+
+  @include tablets {}
+}
+
+.svg {
+  width: rem(70px);
+  height: rem(121px);
   fill: #f2f5f4;
-  ;
-    }
+}
 
- .discription__title{
-color: #000000;
-font-family: "Alegreya Sans";
-font-size: 27px;
-font-weight: 700;
-margin: 25px 0 0 0;
- }
+.discription__title {
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: rem(27px);
+  font-weight: 700;
+  margin: rem(25px) 0 0 0;
+}
 
- .discription__txt{
-width: 318px;
-color: #666666;
-font-family: "Alegreya Sans";
-font-size: 18px;
-font-weight: 300; 
- }
- 
- .discription__item{
+.discription__txt {
+  width: rem(318px);
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 300;
+
+  @include tablets {
+    width: 25.875rem;
+  }
+
+  @include phones {
+    width: 19.875rem;
+  }
+
+}
+
+.discription__item {
   position: relative;
-  margin:0 0 0 45px;
-  
- }
- .discription__item:first-child::before{
+  margin: 0 0 0 rem(45px);
+
+  @include tablets {
+    margin: 0 auto;
+  }
+
+  @include phones {
+    display: flex;
+  }
+}
+
+.discription__item:first-child::before {
   content: "";
-    position: absolute;
-    top: 78px;
-    right: -34px;
-    width: 67px;
-    height: 21px;
-    background-image: url(../img/icon_png/dots.png);
-    background-repeat: no-repeat;
-    
- }
- .discription__item:nth-child(2)::before{
+  position: absolute;
+  top: rem(78px);
+  right: rem(-34px);
+  width: rem(67px);
+  height: rem(21px);
+  background-image: url(../img/icon_png/dots.png);
+  background-repeat: no-repeat;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.discription__item:nth-child(2)::before {
   content: "";
-    position: absolute;
-    top: 78px;
-    right: -34px;
-    width: 67px;
-    height: 21px;
-    background-image: url(../img/icon_png/dots.png);
-    background-repeat: no-repeat;
- }
- 
- .img-bg::before{
+  position: absolute;
+  top: rem(78px);
+  right: rem(-34px);
+  width: rem(67px);
+  height: rem(21px);
+  background-image: url(../img/icon_png/dots.png);
+  background-repeat: no-repeat;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.img-bg::before {
   content: url(../img/razz.png);
   position: relative;
- }
+
+  @include tablets {
+    display: none;
+  }
+}

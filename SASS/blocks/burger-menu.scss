@@ -1,0 +1,41 @@
+.burger-wrap {
+  width: rem(24px);
+  height: rem(24px);
+  align-items: center;
+  vertical-align: middle;
+  display: none;
+
+  @include tablets{
+  display: flex;
+  }
+}
+
+.burger {
+  width: rem(24px);
+  height: rem(4px);
+  border-radius: 2px;
+  position: absolute;
+  background-color: #fff;
+  right: 0;
+  margin-right: 25PX;
+
+  &:before {
+    content: "";
+    width: rem(24px);
+    height: rem(4px);
+    position: absolute;
+    bottom: rem(9px);
+    border-radius: rem(2px);
+    background-color: #fff;
+  }
+
+  &::after {
+    content: "";
+    width: rem(24px);
+    height: rem(4px);
+    position: absolute;
+    background-color: #fff;
+    top: rem(9px);
+    border-radius: rem(2px);
+  }
+}

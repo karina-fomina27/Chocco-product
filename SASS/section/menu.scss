@@ -13,7 +13,7 @@ width: 100%;
     display: block;
     position: absolute;
     top: 0;
-    left: 0px;
+    left: rem(0px);
     right: 0;
     opacity: .2;
 }
@@ -23,12 +23,12 @@ width: 100%;
 display: block;
 position: absolute;
 top:-9%;
-left: 33px;
+left: rem(33px);
 }
 
  .menu__title{
 font-family: "Alegreya Sans";
-font-size: 48px;
+font-size: rem(48px);
 font-weight: 700;
 text-transform: uppercase;
 position: absolute;
@@ -70,6 +70,6 @@ z-index: 10;
   color: inherit;
   writing-mode: vertical-rl;
   font-family: "Alegreya Sans";
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 500;
 }

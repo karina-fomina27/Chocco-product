@@ -1,29 +1,38 @@
-html, body{
-  width: 100%;
-  height: 100%;
+  html {
+    font-size: 16px;
   }
-  
-  ul,li{
-  padding: 0;
-  margin: 0;
+
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
   }
-  
-  li{
-  list-style-type: none;
+
+
+
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
   }
-  
-  p{
-  padding: 0;
-  margin: 0;
+
+  li {
+    list-style-type: none;
   }
-  
-  a{
-  text-decoration: none;
-  cursor: pointer;
+
+  p {
+    padding: 0;
+    margin: 0;
   }
-  
-  *{
-  box-sizing: border-box;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 
   h1,
@@ -37,24 +46,28 @@ html, body{
   }
 
 
-input:focus,
-textarea:focus{
- outline: none;
- border: 3px solid #dde3bd;
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 3px solid #dde3bd;
   }
 
-    .section{
-    height:100vh;
+  .wrapper {
     position: relative;
-    
-    }
-   
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+  }
 
-    .container{
-      max-width: 940px;
-      width: 100%;
-      margin: 0 auto;
-    }
+  .section {
+    height: 100vh;
+    position: relative;
 
-  
-    
+  }
+
+
+  .container {
+    max-width: 940px;
+    width: 95%;
+    margin: 0 auto;
+  }

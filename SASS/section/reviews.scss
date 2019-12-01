@@ -1,90 +1,140 @@
-
-.reviews{
+.reviews {
   background-color: #ffffff;
   position: relative;
   background-image: url(../img/berry.png);
   background-repeat: no-repeat;
-  background-position: 86% 2.5%;
-  padding: 0 0 60px 0;
- }
+  background-position: 81% 9.5%;
+  padding: rem(50px) 0 rem(60px) 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  @include tablets{
+    background-position: 108% 2.5%;
+  }
+}
 
 
- .container__reviews{
-  padding-top: 4.3125rem ;
- }
- .reviews__wrap{
-width: 100%;
-margin:0 auto;
-display: flex;
-justify-content: center;
-
- }
-
- .reviews-title{
-color: #0d0d0d;
-font-family: "Alegreya Sans";
-font-size: 48px;
-font-weight: 700;
-text-transform: uppercase;
-margin: 0 0 44px 0;
- }
-
- .reviews-content{
-width: 940px;
-height: 345px;
-background-image: url(../img/bg-rew.jpg);
-margin: 0 auto;
-display: flex;
-position: relative;
-
- }
-
- .reviews__list{
-    padding: 4.79%;
-    margin-bottom: 5.33%;
-    position: relative;
-    display: flex;
- }
-
- .reviews__item{
+.container--reviews {
+  height: 100%;
   display: flex;
- }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 58.75rem;
+}
 
- .reviews__photo{
-  margin-right: 20px;
-    position: relative;
-    z-index: 10;
- }
+.reviews__wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 
- .rewiews__comment{
-  width: 414px;
-  text-align: left;
- }
+}
 
- .reviews__comment__title{
+.reviews-title {
 color: #323232;
 font-family: "Alegreya Sans";
 font-size: 30px;
 font-weight: 500;
-margin: 25px 0 30px 0;
- }
 
- .reviews__comment__title{
-color: #666666;
-font-family: "Alegreya Sans";
-font-size: 18px;
-font-weight: 400;
- }
+  @include tablets{
+    margin: rem(79px) 0 3.75rem 0;
+  }
+}
 
- .reviews__comment__txt{
-color: #666666;
-font-family: "Alegreya Sans";
-font-size: 18px;
-font-weight: 400; 
-margin: 0 0 32px 0;
- }
+.reviews-content {
+  width: rem(940px);
+  height: rem(345px);
+  background-image: url(../img/bg-rew.jpg);
+  margin: 0 auto;
+  display: flex;
+  position: relative;
 
-.reviews__carusel{
+  @include tablets {
+    min-height: 30%;
+  }
+}
+
+.reviews-list {
+  z-index: 10;
+  width: 100%;
+}
+
+.reviews-item--active {
+  display: flex;
+  @include tablets {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reviews-item--1 {
+  // overflow: hidden;
+  width: 100%;
+  margin-top: 3.125rem;
+  position: relative;
+  padding: 2.8125rem;
+  background-color: #f8faf9;
+  background-image: url(/img/img_reviews.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  
+  @include tablets {
+    width: 68%;
+    margin-top: 6.125rem;
+    position: relative;
+    padding: 2.8125rem;
+    background-color: #f8faf9;
+    background-image: url(/img/img_reviews.png);
+    background-repeat: no-repeat;
+    background-position: top right; 
+    margin: 0 auto;
+  }
+  @include tablets {
+    width: 100%;
+    margin-top: 6.125rem;
+    position: relative;
+    padding: 2.8125rem;
+    background-color: #f8faf9;
+    background-image: url(/img/img_reviews.png);
+    background-repeat: no-repeat;
+    background-position: top right; 
+    margin: 0 auto;
+  }
+}
+
+.reviews__photo {
+  margin-right: rem(20px);
+  position: relative;
+  z-index: 10;
+}
+
+.rewiews__comment {
+  width: rem(414px);
+  text-align: left;
+  
+}
+
+.reviews__comment__title {
+  color: #323232;
+  font-family: "Alegreya Sans";
+  font-size: rem(30px);
+  font-weight: 500;
+  margin: rem(25px) 0 rem(30px) 0;
+}
+
+.reviews__comment__txt {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 400;
+  margin: 0 0 rem(32px) 0;
+}
+
+.reviews__carusel {
   width: 100%;
   display: flex;
   position: relative;
@@ -92,18 +142,18 @@ margin: 0 0 32px 0;
   z-index: 20;
 }
 
-.carusel__item{
+.carusel__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 27px 11px 0 0;
+  margin: rem(27px) rem(11px) 0 0;
 }
 
-.carusel__photo{
-  width: 67px;
-  height: 68px;
+.carusel__photo {
+  width: rem(67px);
+  height: rem(68px);
   position: obsolute;
-  border: 6px solid #0f5a47;
+  border: rem(6px) solid #0f5a47;
   background-color: #efefef;
   border-radius: 50%;
 }

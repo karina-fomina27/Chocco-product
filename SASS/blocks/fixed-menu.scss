@@ -1,18 +1,18 @@
 
 .fixed-menu {
   position: fixed;
-  top: 177px;
-  right: 172px;
+  top: rem(177px);
+  right: rem(172px);
   z-index: 2;
 }
 
 .fixed-menu__dot {
   display: block;
-  height: 20px;
-  width: 20px;
+  height: rem(20px);
+  width: rem(20px);
   border-radius: 50%;
-  border: 1px solid transparent;
-  margin-bottom: 3px;
+  border: rem(1px) solid transparent;
+  margin-bottom: rem(3px);
   position: relative;
 
   &--active {
@@ -21,8 +21,8 @@
 
   &:before {
     content: '';
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     background-color: white;
     border-radius: 50%;
     position: absolute;

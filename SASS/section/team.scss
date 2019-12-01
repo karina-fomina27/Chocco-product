@@ -7,10 +7,13 @@
   
   .team {
     position: relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Alegreya Sans",sans-serif;
+    font-family: "Alegreya Sans";
+    @include tablets{
+    }
 }
 
 .team__container{
@@ -20,17 +23,20 @@
 .section-title{
 color: #0d0d0d;
 font-family: "Alegreya Sans";
-font-size: 48px;
+font-size: rem(48px);
 font-weight: 700;
 text-transform: uppercase;
 text-align: center;
-margin-top:4.2222rem ;
+margin-top: rem(30px) ;
 }
 
 .team__list {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+
+@include tablets{
+  }
 }
 
 .team__item:first-child {
@@ -43,6 +49,10 @@ flex-wrap: wrap;
   align-items: center;
   text-align: center;
   max-width: 25%;
+
+  @include tablets{
+    max-width: 39%;
+  }
 }
 // .team-grid__img-wrap {
   // width: 13.9375rem;
@@ -52,7 +62,7 @@ flex-wrap: wrap;
 position: relative;
 color: #323232;
 font-family: "Alegreya Sans";
-font-size: 21px;
+font-size: rem(21px);
 font-weight: 500;
 }
 
@@ -63,20 +73,22 @@ font-weight: 500;
 .team__post{
 color: #281e1e;
 font-family: "Alegreya Sans";
-font-size: 18px;
+font-size: rem(18px);
 font-weight: 500;
-margin: 13px 0 6px 0;
+margin: rem(13px) 0 rem(6px) 0;
 height: 0;
-overflow: hidden;
+// overflow: hidden;
+
 }
 
 .team__duties{
 color: #666666;
 font-family: "Alegreya Sans";
-font-size: 18px;
+font-size: rem(18px);
 font-weight: 300;
 height: 0;
-overflow: hidden;
+margin-top: rem(30px);
+// overflow: hidden;
 }
 
 .team__item .team__item_active{
