@@ -14,13 +14,13 @@ html {
 
 .welcome-page {
   display: flex;
-  background-image: url(/img/backgroundone.jpg);
+  background-image: url(../img/backgroundone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   @include tablets {
-    background-image: url(/img/bg786.jpg);
+    background-image: url(../img/bg786.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -29,7 +29,7 @@ html {
   }
 
   @include phones {
-    background-image: url(/img/bg480.png);
+    background-image: url(../img/bg480.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -63,7 +63,7 @@ html {
     padding-top: 27%;
     justify-content: center;
   }
-  
+
   @include phones {
     margin-top: 6%;
   }
@@ -158,12 +158,12 @@ html {
     padding: 30% 0 0 0;
   }
 
-  @include phones{
+  @include phones {
     width: 82%;
     text-align: center;
-    
-}
+
   }
+}
 
 
 .delivery__txt {
@@ -197,8 +197,8 @@ html {
 .pros__item {
   display: flex;
   margin-right: 20%;
-  
-  @include phones{
+
+  @include phones {
     margin-right: 4%;
   }
 }

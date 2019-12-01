@@ -600,6 +600,9 @@ template {
   top: 11.0625rem;
   right: 10.75rem;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .fixed-menu {
+      display: none; } }
   @media screen and (max-width: 480px) {
     .fixed-menu {
       display: none; } }
@@ -891,7 +894,7 @@ template {
   position: relative;
   padding: 2.8125rem;
   background-color: #f8faf9;
-  background-image: url(/img/imgreviews.png);
+  background-image: url(../img/imgreviews.png);
   background-repeat: no-repeat;
   background-position: top right; }
   @media screen and (max-width: 768px) {
@@ -901,7 +904,7 @@ template {
       position: relative;
       padding: 2.8125rem;
       background-color: #f8faf9;
-      background-image: url(/img/imgreviews.png);
+      background-image: url(../img/imgreviews.png);
       background-repeat: no-repeat;
       background-position: top right;
       margin: 0 auto; } }
@@ -912,7 +915,7 @@ template {
       position: relative;
       padding: 2.8125rem;
       background-color: #f8faf9;
-      background-image: url(/img/imgreviews.png);
+      background-image: url(../img/imgreviews.png);
       background-repeat: no-repeat;
       background-position: top right;
       margin: 0 auto; } }
@@ -988,13 +991,13 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/img/backgroundone.jpg);
+  background-image: url(../img/backgroundone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
   @media screen and (max-width: 768px) {
     .welcome-page {
-      background-image: url(/img/bg786.jpg);
+      background-image: url(../img/bg786.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
@@ -1002,7 +1005,7 @@ template {
       height: 100%; } }
   @media screen and (max-width: 480px) {
     .welcome-page {
-      background-image: url(/img/bg480.png);
+      background-image: url(../img/bg480.png);
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
@@ -1578,6 +1581,12 @@ input[type="checkbox"]:checked + label:after {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 1.6111rem; }
+  @media screen and (max-width: 768px) {
+    .buttons__wrap {
+      margin: 9px auto; } }
+  @media screen and (max-width: 480px) {
+    .buttons__wrap {
+      margin: 9px auto; } }
 
 .button__order {
   padding: 1rem 2.375rem;
@@ -1599,6 +1608,14 @@ input[type="checkbox"]:checked + label:after {
   font-family: "Alegreya Sans";
   font-size: 1.125rem;
   font-weight: 400; }
+
+@media screen and (max-width: 768px) {
+  .checkbox__wrap {
+    margin: 9px auto; } }
+
+@media screen and (max-width: 480px) {
+  .checkbox__wrap {
+    margin: 9px auto; } }
 
 .map {
   background-image: url(../img/map.jpg);

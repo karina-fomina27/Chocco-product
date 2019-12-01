@@ -1,12 +1,15 @@
-
 .fixed-menu {
   position: fixed;
   top: rem(177px);
   right: rem(172px);
   z-index: 2;
 
-  @include phones{
-  display: none;
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+    display: none;
   }
 }
 
