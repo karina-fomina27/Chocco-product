@@ -11,7 +11,7 @@ html {
   display: flex;
 }
 .welcome-page {
-  background-image: url(/img/background_one.jpg);
+  background-image: url(../img/background_one.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -24,7 +24,7 @@ html {
      position: absolute;
      width: rem(59px);
      height: rem(112px);
-     background-image: url(/img/leafwalcome.png);
+     background-image: url(../img/leafwalcome.png);
     bottom: -8%;
     left: 10%;
    }

@@ -943,7 +943,7 @@ template {
   display: flex; }
 
 .welcome-page {
-  background-image: url(/img/background_one.jpg);
+  background-image: url(../img/background_one.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -954,7 +954,7 @@ template {
     position: absolute;
     width: 3.6875rem;
     height: 7rem;
-    background-image: url(/img/leafwalcome.png);
+    background-image: url(../img/leafwalcome.png);
     bottom: -8%;
     left: 10%; }
 
