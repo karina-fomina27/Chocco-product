@@ -943,7 +943,7 @@ template {
   display: flex; }
 
 .welcome-page {
-  background-image: url(../img/background_one.jpg);
+  background-image: url(/img/backgroundone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
