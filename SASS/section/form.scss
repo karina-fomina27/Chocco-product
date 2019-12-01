@@ -130,6 +130,14 @@ height: 106px;
 
 .radio__wrap {
   display: flex;
+  
+  @include tablets {
+  margin: 9px auto;
+  }
+  
+  @include phones {
+  margin: 9px auto;
+  }
 }
 
 

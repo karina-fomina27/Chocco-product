@@ -1,102 +1,129 @@
-.berry{
-  display: block;
+.team__berry {
   position: absolute;
   right: 0;
-  top:-30%;
+  top: -36%;
+}
+
+.team {
+
+   
+@include tablets {
+    height: 100%;
   }
-  
-  .team {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Alegreya Sans";
-    @include tablets{
-    }
 }
 
-.team__container{
-  margin-top: 3.2222rem;
+.section-title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: rem(30px);
 }
 
-.section-title{
-color: #0d0d0d;
-font-family: "Alegreya Sans";
-font-size: rem(48px);
-font-weight: 700;
-text-transform: uppercase;
-text-align: center;
-margin-top: rem(30px) ;
+.team__container {
+  @include tablets {}
 }
 
 .team__list {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-
-@include tablets{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: rem(20px);
+ 
+  @include tablets {
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
   }
-}
-
-.team__item:first-child {
-  margin-left: 0;
+  @include phones{
+  width: 500px;
+  flex-wrap: wrap;
+  }
 }
 
 .team__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 25%;
+  position: relative;
 
-  @include tablets{
-    max-width: 39%;
+  @include tablets {
+  margin-right: rem(20px);
   }
 }
-// .team-grid__img-wrap {
-  // width: 13.9375rem;
+
+.worker__img {
+  width: rem(222px);
+  max-width: rem(222px);
+  height: rem(290px);
+  max-height: rem(290px);
+  object-fit: contain;
+
+  @include phones{
+width: 142px;
+height: 185px;
+  }
+}
+
+.worker__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: rem(25px);
+}
+
+
+.worker__name-descript {
+  color: #323232;
+  font-family: "Alegreya Sans";
+  font-size: rem(21px);
+  font-weight: 500;
+
+}
+
+.worker__name-pic {
+  margin-left: rem(10px);
+  transition: all 2s ease-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.worker__name-pic--rotated {
+  transform: rotate(180deg);
+  transition: all 2s ease-out;
+}
+
+.worker__post-title {
+  text-align: center;
+  margin-top: rem(10px);
+}
+
+.worker__post-txt {
+  color: #281e1e;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 400;
+}
+
+.worker__post-description {
+  text-align: center;
+  margin: 0;
+}
+
+.description-txt {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 300;
+}
+
+// .worker__descrip{
+// max-width:0;
+// overflow: hidden;
+// transition: all 2s ease-in;
 // }
-
-.team__name{
-position: relative;
-color: #323232;
-font-family: "Alegreya Sans";
-font-size: rem(21px);
-font-weight: 500;
+.worker__descrip--close {
+  max-width: rem(1000px);
+  transition: all 2s ease-in;
 }
-
-.team__content{
-
-}
-
-.team__post{
-color: #281e1e;
-font-family: "Alegreya Sans";
-font-size: rem(18px);
-font-weight: 500;
-margin: rem(13px) 0 rem(6px) 0;
-height: 0;
-// overflow: hidden;
-
-}
-
-.team__duties{
-color: #666666;
-font-family: "Alegreya Sans";
-font-size: rem(18px);
-font-weight: 300;
-height: 0;
-margin-top: rem(30px);
-// overflow: hidden;
-}
-
-.team__item .team__item_active{
-display: block;
-}
-
-
-
-
-
-

@@ -13,7 +13,25 @@
     background-position: 108% 2.5%;
   }
 }
-
+.reviews__photo-title{
+  width: 254px;
+  height: 260px;
+  max-width: 254px;
+  max-height: 2560px;
+  
+  @include tablets{
+    width: 204px;
+    height: 229px;
+    max-width: 204px;
+    max-height: 209px;
+  }
+  @include phones{
+    width: 122px;
+    height: 125px;
+    max-width: 122px;
+    max-height: 125px;
+  }
+}
 
 .container--reviews {
   height: 100%;
@@ -47,7 +65,6 @@ font-weight: 500;
 .reviews-content {
   width: rem(940px);
   height: rem(345px);
-  background-image: url(../img/bg-rew.jpg);
   margin: 0 auto;
   display: flex;
   position: relative;
@@ -72,13 +89,12 @@ font-weight: 500;
 }
 
 .reviews-item--1 {
-  // overflow: hidden;
   width: 100%;
   margin-top: 3.125rem;
   position: relative;
   padding: 2.8125rem;
   background-color: #f8faf9;
-  background-image: url(/img/img_reviews.png);
+  background-image: url(/img/imgreviews.png);
   background-repeat: no-repeat;
   background-position: top right;
   
@@ -88,7 +104,7 @@ font-weight: 500;
     position: relative;
     padding: 2.8125rem;
     background-color: #f8faf9;
-    background-image: url(/img/img_reviews.png);
+    background-image: url(/img/imgreviews.png);
     background-repeat: no-repeat;
     background-position: top right; 
     margin: 0 auto;
@@ -99,7 +115,7 @@ font-weight: 500;
     position: relative;
     padding: 2.8125rem;
     background-color: #f8faf9;
-    background-image: url(/img/img_reviews.png);
+    background-image: url(/img/imgreviews.png);
     background-repeat: no-repeat;
     background-position: top right; 
     margin: 0 auto;
