@@ -1215,13 +1215,13 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  width: 80%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 1.25rem; }
   @media screen and (max-width: 768px) {
     .team__list {
+      width: 80%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
