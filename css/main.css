@@ -1213,8 +1213,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1226,8 +1224,7 @@ template {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-top: 1.25rem; } }
+      flex-wrap: wrap; } }
   @media screen and (max-width: 480px) {
     .team__list {
       width: 459px;
