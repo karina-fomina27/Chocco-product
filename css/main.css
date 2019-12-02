@@ -1230,7 +1230,7 @@ template {
       margin-top: 1.25rem; } }
   @media screen and (max-width: 480px) {
     .team__list {
-      width: 500px;
+      width: 459px;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
 
