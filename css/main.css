@@ -1215,15 +1215,19 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 80%;
   margin-top: 1.25rem; }
   @media screen and (max-width: 768px) {
     .team__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      width: 80%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
+      margin-top: 1.25rem; } }
   @media screen and (max-width: 480px) {
     .team__list {
       width: 500px;
@@ -1391,6 +1395,9 @@ template {
 
 .order__container {
   padding: 5.375rem 0 0 0; }
+  @media screen and (max-width: 768px) {
+    .order__container {
+      padding: 3.375rem 0 0 0; } }
 
 .form__col {
   display: -webkit-box;
@@ -1579,10 +1586,10 @@ input[type="checkbox"]:checked + label:after {
   margin-right: 1.6111rem; }
   @media screen and (max-width: 768px) {
     .buttons__wrap {
-      margin: 9px auto; } }
+      margin: 0 auto; } }
   @media screen and (max-width: 480px) {
     .buttons__wrap {
-      margin: 9px auto; } }
+      margin: 0 auto; } }
 
 .button__order {
   padding: 1rem 2.375rem;

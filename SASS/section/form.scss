@@ -71,6 +71,10 @@
 .order__container {
   padding: rem(86px) 0 0 0;
 
+  @include tablets{
+    padding: 3.375rem 0 0 0;
+  }
+
 }
 
 .form__col {
@@ -280,11 +284,11 @@ input[type="checkbox"]:checked+label:after {
   margin-right: 1.6111rem;
 
   @include tablets {
-    margin: 9px auto;
+    margin: 0 auto;
   }
 
   @include phones {
-    margin: 9px auto;
+    margin: 0 auto;
   }
 }
 
