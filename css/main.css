@@ -1111,12 +1111,12 @@ template {
   width: 40%; }
   @media screen and (max-width: 768px) {
     .content__right {
-      width: 60%;
+      width: 50%;
       text-align: center;
       margin: auto; } }
   @media screen and (max-width: 480px) {
     .content__right {
-      width: 82%;
+      width: 75%;
       text-align: center; } }
 
 .delivery__txt {

@@ -145,13 +145,13 @@ html {
   width: 40%;
 
   @include tablets {
-    width: 60%;
+    width: 50%;
     text-align: center;
     margin: auto;
   }
 
   @include phones {
-    width: 82%;
+    width: 75%;
     text-align: center;
 
   }
