@@ -71,7 +71,7 @@
 .order__container {
   padding: rem(86px) 0 0 0;
 
-  @include tablets{
+  @include tablets {
     padding: 3.375rem 0 0 0;
   }
 
@@ -139,11 +139,11 @@
   display: flex;
 
   @include tablets {
-    margin: 9px auto;
+    margin: 0px auto;
   }
 
   @include phones {
-    margin: 9px auto;
+    margin: 0 auto;
   }
 }
 
@@ -160,8 +160,7 @@
   font-family: "Alegreya Sans";
   font-size: rem(18px);
   font-weight: 400;
-
-  margin: rem(20px) rem(29px) 0 0;
+  margin: 1.25rem 1.8125rem 10px 1px;
 }
 
 .label__radio input[type="radio"]~span:before {
@@ -173,18 +172,20 @@
   background: #fff;
   border-radius: 50%;
   left: 0;
-  top: 18%;
+  top: 5%;
+  transition: all 0.2s ease;
 }
 
 .label__radio input[type="radio"]:checked~span::after {
   content: "";
   position: absolute;
   left: rem(5px);
-  top: rem(12px);
+  top: 0.4rem;
   width: rem(13px);
   height: rem(13px);
   border-radius: 100%;
   background-color: #0f5a47;
+
 }
 
 input[type="checkbox"]:checked,
@@ -201,7 +202,6 @@ input[type="checkbox"]:not(:checked)+label {
   font-family: "Alegreya Sans";
   font-size: rem(18px);
   font-weight: 400;
-
   cursor: pointer;
   margin-bottom: 2.3333rem;
 }
@@ -216,16 +216,12 @@ input[type="checkbox"]:not(:checked)+label:before {
   height: rem(18px);
   border: rem(1px) solid #dddddd;
   background-color: #ffffff;
+  transition: all 0.2s ease;
 }
 
 input[type="checkbox"]:checked+label:before,
 input[type="checkbox"]:not(:checked)+label:before {
   border-radius: rem(2px);
-}
-
-input[type="radio"]:checked+label:before,
-input[type="radio"]:not(:checked)+label:before {
-  border-radius: 100%;
 }
 
 input[type="checkbox"]:checked+label:after,
@@ -245,16 +241,6 @@ input[type="checkbox"]:not(:checked)+label:after {
   border-left: rem(4px) solid #0f5a47;
   border-bottom: rem(4px) solid #0f5a47;
   transform: rotate(-45deg);
-}
-
-input[type="radio"]:checked+label:after,
-input[type="radio"]:not(:checked)+label:after {
-  left: rem(5px);
-  top: rem(5px);
-  width: rem(10px);
-  height: rem(10px);
-  border-radius: 100%;
-  background-color: #0f5a47;
 }
 
 input[type="checkbox"]:not(:checked)+label:after {

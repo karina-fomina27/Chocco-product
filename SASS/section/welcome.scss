@@ -12,6 +12,8 @@ html {
   display: flex;
 }
 
+.welcome {}
+
 .welcome-page {
   display: flex;
   background-image: url(../img/backgroundone.jpg);
@@ -20,55 +22,41 @@ html {
   position: relative;
 
   @include tablets {
-    background-image: url(../img/bg786.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 100%;
+    background-image: url(/img/bg768.jpg);
+   
+  }
   }
 
-  @include phones {
-    background-image: url(../img/bg480.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: rem(59px);
-    height: rem(112px);
-    background-image: url(../img/leafwalcome.png);
-    bottom: -8%;
-    left: 10%;
-
+  .main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     @include tablets {
-      background-image: none;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding-top: 39%;
+      
+  @include phones{
+    padding-top: 65%;
+  }
     }
   }
 
-}
-
-.main__container {
-  display: flex;
-  width: 100%;
-
   @include tablets {
+    width: 100%;
+    align-items: center;
     justify-content: center;
-    padding-top: 27%;
-    justify-content: center;
+    
+
   }
 
   @include phones {
     margin-top: 6%;
   }
 
-}
+
 
 .leaf,
 .delivery,
@@ -116,6 +104,10 @@ html {
   margin-block-end: 0;
   margin-bottom: 2.875rem;
   margin-top: rem(22px);
+  
+  @include tablets {
+   
+  }
 }
 
 .content-button {
@@ -155,7 +147,7 @@ html {
   @include tablets {
     width: 60%;
     text-align: center;
-    padding: 30% 0 0 0;
+    margin: auto;
   }
 
   @include phones {
@@ -216,32 +208,72 @@ html {
   width: 50%;
 
   @include tablets {
-    width: 0;
+ width: 0%;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: rem(700px);
-    height: rem(780px);
-    background-image: url(../img/bar.png);
-    background-repeat: no-repeat;
-    top: 9%;
-    right: 2%;
-
-    @include tablets {
-      display: none;
-    }
-  }
 }
 
-.img_decor {
+.bar {
+  position: absolute;
+  top: rem(48px);
+  right: 22%;
+
+  @include tablets {
+    width: 49%;
+    height: 44%;
+    position: absolute;
+    top: 0;
+    right: 27%;
+  }
+
+ @include phones{
+  width: 72%;
+    height: 45%;
+    position: absolute;
+    top: rem(9px);
+    right: 15%;
+ }
+}
+
+.decor {
   position: absolute;
   top: 60%;
   right: 16%;
 
   @include tablets {
-    display: none;
+    width: 48%;
+    height: 31%;
+    position: absolute;
+    top: rem(107px);
+    right: 19%;
+  }
+
+  @include phones{
+    width: 67%;
+    height: 25%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
   }
 }
+
+.leaf-welcome{
+  position: absolute;
+  left: 12%;
+  top: 91%;
+ 
+  @include tablets {
+    width: 7%;
+    height: 13%;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+}
+
+@include phones{
+  width: 11%;
+  height: 11%;
+  top: 30%;
+  left: 14%
+}
+  } 

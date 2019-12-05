@@ -5,8 +5,6 @@
 }
 
 .team {
-
-
   @include tablets {
     height: 100%;
   }
@@ -23,25 +21,38 @@
 }
 
 .team__container {
-  @include tablets {}
+  @include tablets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include phones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .team__list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-top: rem(20px);
 
   @include tablets {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
    
   }
-
-  @include phones {
-    width: 459px;
+  @include phones{
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
+
   }
+
 }
 
 .team__item {
@@ -50,6 +61,9 @@
 
   @include tablets {
     margin-right: rem(20px);
+  }
+  @include phones {
+margin: 0;
   }
 }
 
@@ -66,6 +80,9 @@
   }
 }
 
+.worker__container{
+
+}
 .worker__name {
   display: flex;
   align-items: center;

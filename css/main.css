@@ -997,48 +997,43 @@ template {
   position: relative; }
   @media screen and (max-width: 768px) {
     .welcome-page {
-      background-image: url(../img/bg786.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      width: 100%;
-      height: 100%; } }
-  @media screen and (max-width: 480px) {
-    .welcome-page {
-      background-image: url(../img/bg480.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      width: 100%;
-      height: 100%; } }
-  .welcome-page::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 3.6875rem;
-    height: 7rem;
-    background-image: url(../img/leafwalcome.png);
-    bottom: -8%;
-    left: 10%; }
-    @media screen and (max-width: 768px) {
-      .welcome-page::before {
-        background-image: none; } }
+      background-image: url(/img/bg768.jpg); } }
 
 .main__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   @media screen and (max-width: 768px) {
     .main__container {
+      width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding-top: 27%;
-      justify-content: center; } }
-  @media screen and (max-width: 480px) {
+      padding-top: 39%; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
     .main__container {
-      margin-top: 6%; } }
+      padding-top: 65%; } }
+
+@media screen and (max-width: 768px) {
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+@media screen and (max-width: 480px) {
+  margin-top: 6%; }
 
 .leaf,
 .delivery,
@@ -1118,7 +1113,7 @@ template {
     .content__right {
       width: 60%;
       text-align: center;
-      padding: 30% 0 0 0; } }
+      margin: auto; } }
   @media screen and (max-width: 480px) {
     .content__right {
       width: 82%;
@@ -1168,28 +1163,63 @@ template {
   width: 50%; }
   @media screen and (max-width: 768px) {
     .content__left {
-      width: 0; } }
-  .content__left::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 43.75rem;
-    height: 48.75rem;
-    background-image: url(../img/bar.png);
-    background-repeat: no-repeat;
-    top: 9%;
-    right: 2%; }
-    @media screen and (max-width: 768px) {
-      .content__left::before {
-        display: none; } }
+      width: 0%; } }
 
-.img_decor {
+.bar {
+  position: absolute;
+  top: 3rem;
+  right: 22%; }
+  @media screen and (max-width: 768px) {
+    .bar {
+      width: 49%;
+      height: 44%;
+      position: absolute;
+      top: 0;
+      right: 27%; } }
+  @media screen and (max-width: 480px) {
+    .bar {
+      width: 72%;
+      height: 45%;
+      position: absolute;
+      top: 0.5625rem;
+      right: 15%; } }
+
+.decor {
   position: absolute;
   top: 60%;
   right: 16%; }
   @media screen and (max-width: 768px) {
-    .img_decor {
-      display: none; } }
+    .decor {
+      width: 48%;
+      height: 31%;
+      position: absolute;
+      top: 6.6875rem;
+      right: 19%; } }
+  @media screen and (max-width: 480px) {
+    .decor {
+      width: 67%;
+      height: 25%;
+      position: absolute;
+      top: 20%;
+      right: 10%; } }
+
+.leaf-welcome {
+  position: absolute;
+  left: 12%;
+  top: 91%; }
+  @media screen and (max-width: 768px) {
+    .leaf-welcome {
+      width: 7%;
+      height: 13%;
+      position: absolute;
+      top: 25%;
+      left: 27%; } }
+  @media screen and (max-width: 480px) {
+    .leaf-welcome {
+      width: 11%;
+      height: 11%;
+      top: 30%;
+      left: 14%; } }
 
 .team__berry {
   position: absolute;
@@ -1209,17 +1239,44 @@ template {
   text-align: center;
   margin-top: 1.875rem; }
 
+@media screen and (max-width: 768px) {
+  .team__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 480px) {
+  .team__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 1.25rem; }
   @media screen and (max-width: 768px) {
     .team__list {
-      width: 80%;
+      width: 70%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1227,7 +1284,10 @@ template {
       flex-wrap: wrap; } }
   @media screen and (max-width: 480px) {
     .team__list {
-      width: 459px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
 
@@ -1236,6 +1296,9 @@ template {
   @media screen and (max-width: 768px) {
     .team__item {
       margin-right: 1.25rem; } }
+  @media screen and (max-width: 480px) {
+    .team__item {
+      margin: 0; } }
 
 .worker__img {
   width: 13.875rem;
@@ -1451,10 +1514,10 @@ template {
   display: flex; }
   @media screen and (max-width: 768px) {
     .radio__wrap {
-      margin: 9px auto; } }
+      margin: 0px auto; } }
   @media screen and (max-width: 480px) {
     .radio__wrap {
-      margin: 9px auto; } }
+      margin: 0 auto; } }
 
 .label__radio input[type="radio"] {
   display: none; }
@@ -1467,7 +1530,7 @@ template {
   font-family: "Alegreya Sans";
   font-size: 1.125rem;
   font-weight: 400;
-  margin: 1.25rem 1.8125rem 0 0; }
+  margin: 1.25rem 1.8125rem 10px 1px; }
 
 .label__radio input[type="radio"] ~ span:before {
   content: "";
@@ -1478,13 +1541,16 @@ template {
   background: #fff;
   border-radius: 50%;
   left: 0;
-  top: 18%; }
+  top: 5%;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 .label__radio input[type="radio"]:checked ~ span::after {
   content: "";
   position: absolute;
   left: 0.3125rem;
-  top: 0.75rem;
+  top: 0.4rem;
   width: 0.8125rem;
   height: 0.8125rem;
   border-radius: 100%;
@@ -1515,15 +1581,14 @@ input[type="checkbox"]:not(:checked) + label:before {
   width: 1.125rem;
   height: 1.125rem;
   border: 0.0625rem solid #dddddd;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 input[type="checkbox"]:checked + label:before,
 input[type="checkbox"]:not(:checked) + label:before {
   border-radius: 0.125rem; }
-
-input[type="radio"]:checked + label:before,
-input[type="radio"]:not(:checked) + label:before {
-  border-radius: 100%; }
 
 input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after {
@@ -1545,15 +1610,6 @@ input[type="checkbox"]:not(:checked) + label:after {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
-
-input[type="radio"]:checked + label:after,
-input[type="radio"]:not(:checked) + label:after {
-  left: 0.3125rem;
-  top: 0.3125rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-radius: 100%;
-  background-color: #0f5a47; }
 
 input[type="checkbox"]:not(:checked) + label:after {
   opacity: 0; }
@@ -1670,14 +1726,13 @@ input[type="checkbox"]:checked + label:after {
   z-index: 10; }
 
 .menu__accordion {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  color: inherit;
-  cursor: pointer; }
+  top: 0;
+  right: 0;
+  bottom: 0; }
 
 .accordion__item {
   position: relative;
@@ -1690,7 +1745,6 @@ input[type="checkbox"]:checked + label:after {
   position: relative; }
 
 .accordion__pic {
-  width: 7.25rem;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
