@@ -691,44 +691,81 @@ template {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.burger-wrap {
-  width: 1.5rem;
-  height: 1.5rem;
+#menuToggle {
+  overflow: hidden;
+  position: absolute;
+  right: 13px;
+  top: 3%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  vertical-align: middle;
-  display: none; }
+  align-items: center; }
   @media screen and (max-width: 768px) {
-    .burger-wrap {
+    #menuToggle {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
 
-.burger {
-  width: 1.5rem;
-  height: 0.25rem;
-  border-radius: 2px;
+#menuToggle input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  background-color: #fff;
-  right: 0;
-  margin-right: 25PX; }
-  .burger:before {
-    content: "";
-    width: 1.5rem;
-    height: 0.25rem;
-    position: absolute;
-    bottom: 0.5625rem;
-    border-radius: 0.125rem;
-    background-color: #fff; }
-  .burger::after {
-    content: "";
-    width: 1.5rem;
-    height: 0.25rem;
-    position: absolute;
-    background-color: #fff;
-    top: 0.5625rem;
-    border-radius: 0.125rem; }
+  cursor: pointer;
+  opacity: 0;
+  /* hide input */
+  z-index: 1;
+  /* top of the menu */ }
+
+#menuToggle span {
+  width: 24px;
+  height: 4px;
+  background-color: #ffff;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  -ms-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  -o-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
+  transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71); }
+
+#span1 {
+  -webkit-transform-origin: 4px 0px;
+  -ms-transform-origin: 4px 0px;
+  transform-origin: 4px 0px; }
+
+#span3 {
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right; }
+
+#menuToggle input:checked ~ #span1 {
+  background-color: #ffff;
+  -webkit-transform: rotate(43deg) translate(7px);
+  -ms-transform: rotate(43deg) translate(7px);
+  transform: rotate(43deg) translate(7px); }
+
+#menuToggle input:checked ~ #span2 {
+  background-color: #ffff;
+  -webkit-transform: rotate(493deg) translate(1px);
+  -ms-transform: rotate(493deg) translate(1px);
+  transform: rotate(493deg) translate(1px); }
+
+#menuToggle input:checked ~ #span3 {
+  background-color: #ffff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity: 0; }
 
 .modal {
   position: fixed;

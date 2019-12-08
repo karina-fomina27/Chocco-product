@@ -12,7 +12,7 @@ $(function () {
 
       parent.removeClass(active);
 
-    } else {
+    } else{
 
       btn.parent().removeClass(active);
       parent.addClass(active);
@@ -21,8 +21,6 @@ $(function () {
   });
 });
 
-// const elem = document.querySelector('burger-wrap')
-// elem.addEventListener('click', function(){
-// document.querySelector('modal').classList.add('modal_active');
-// });
-
+document.getElementById('menuToggle').addEventListener('click', function(){
+document.getElementById('mymodal').classList.add('modal_active');
+});
