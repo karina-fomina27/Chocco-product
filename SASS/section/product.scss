@@ -187,7 +187,12 @@
 }
 
 .slider_left {
-  left: 11%;
+  left: -7%;
+
+  @include tablets{
+    left: 11%;
+  }
+
 }
 
 .slider_right {
@@ -195,6 +200,10 @@
 
   @include tablets{
     right: 17%;
+  }
+
+  @include phones{
+    right: 11%;
   }
 
 }

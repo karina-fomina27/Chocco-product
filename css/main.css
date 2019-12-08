@@ -1835,13 +1835,19 @@ input[type="checkbox"]:checked + label:after {
       top: 13%; } }
 
 .slider_left {
-  left: 11%; }
+  left: -7%; }
+  @media screen and (max-width: 768px) {
+    .slider_left {
+      left: 11%; } }
 
 .slider_right {
   right: -7%; }
   @media screen and (max-width: 768px) {
     .slider_right {
       right: 17%; } }
+  @media screen and (max-width: 480px) {
+    .slider_right {
+      right: 11%; } }
 
 .arrow {
   width: 184%;
