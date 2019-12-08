@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px; }
 
@@ -57,80 +58,21 @@ textarea:focus {
 
 @font-face {
   font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-Thin.woff2") format("woff2"), url("/fonts/AlegreyaSans-Thin.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Thin.ttf") format("truetype");
-  font-weight: 100; }
+  /* Имя шрифта */
+  src: url(../fonts/AlegreyaSans-Regular.woff2);
+  /* Путь к файлу со шрифтом */ }
 
 @font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-ThinItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-ThinItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-ThinItalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic; }
+  font-family: 'Alegreya Sans - Black Italic';
+  /* Имя шрифта */
+  src: url(../fonts/AlegreyaSans-BlackItalic.woff);
+  /* Путь к файлу со шрифтом */ }
 
 @font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-Light.woff2") format("woff2"), url("/fonts/AlegreyaSans-Light.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Light.ttf") format("truetype");
-  font-weight: 300; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-LightItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans/AlegreyaSans-LightItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/fonts/") format("woff2"), url("/fonts/AlegreyaSans-Regular.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Regular.ttf") format("truetype");
-  font-weight: 400; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-Italic.woff2") format("woff2"), url("/fonts/AlegreyaSans-Italic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-Medium.woff2") format("woff2"), url("/fonts/AlegreyaSans-Medium.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Medium.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-MediumItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-MediumItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-Bold.woff2") format("woff2"), url("/fonts/AlegreyaSans-Bold.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Bold.ttf") format("truetype");
-  font-weight: 700; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-BoldItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-BoldItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-ExtraBold.woff2") format("woff2"), url("/fonts/AlegreyaSans/AlegreyaSans-ExtraBold.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-ExtraBoldItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-ExtraBoldItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-Black.woff2") format("woff2"), url("/fonts/AlegreyaSans-Black.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-Black.ttf") format("truetype");
-  font-weight: 900; }
-
-@font-face {
-  font-family: 'Alegreya Sans';
-  src: url("/fonts/AlegreyaSans-BlackItalic.woff2") format("woff2"), url("/fonts/AlegreyaSans-BlackItalic.woff") format("woff"), url("/fonts/fontsgugle/AlegreyaSans-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic; }
+  font-family: 'Alegreya Sans - Extra Bold';
+  /* Имя шрифта */
+  src: url(/fonts/AlegreyaSans-ExtraBold.woff);
+  /* Путь к файлу со шрифтом */ }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -788,6 +730,33 @@ template {
     top: 0.5625rem;
     border-radius: 0.125rem; }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(253, 253, 253, 0.95);
+  visibility: hidden;
+  opacity: 0; }
+
+.modal_active .modal {
+  visibility: visible; }
+
+.mobile-menu__item {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase; }
+
 .reviews {
   background-color: #ffffff;
   position: relative;
@@ -849,10 +818,11 @@ template {
   justify-content: center; }
 
 .reviews-title {
-  color: #323232;
+  color: #0d0d0d;
   font-family: "Alegreya Sans";
-  font-size: 30px;
-  font-weight: 500; }
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase; }
   @media screen and (max-width: 768px) {
     .reviews-title {
       margin: 4.9375rem 0 3.75rem 0; } }
@@ -870,7 +840,6 @@ template {
       min-height: 30%; } }
 
 .reviews-list {
-  z-index: 10;
   width: 100%; }
 
 .reviews-item--active {
@@ -929,6 +898,12 @@ template {
   width: 25.875rem;
   text-align: left; }
 
+.reviews__comment__name {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 500; }
+
 .reviews__comment__title {
   color: #323232;
   font-family: "Alegreya Sans";
@@ -951,8 +926,7 @@ template {
   position: relative;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 20; }
+  justify-content: center; }
 
 .carusel__item {
   display: -webkit-box;
@@ -1052,11 +1026,11 @@ template {
   text-transform: uppercase; }
   .icon-tel:before {
     content: url(../img/icon_png/phone_.png);
-    margin: 0 5% 0 0; }
+    margin: 0 5%  0; }
 
 .content__title {
   color: #ffffff;
-  font-family: "Alegreya Sans";
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 3.75rem;
   font-weight: 700;
   line-height: 3.75rem;
@@ -1080,7 +1054,7 @@ template {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 0.625rem rgba(63, 63, 63, 0.25);
   box-shadow: 0 0 0.625rem rgba(63, 63, 63, 0.25);
-  font-family: "Alegreya Sans";
+  font-family: "Alegreya Sans - Extra Bold";
   font-size: 1.1875rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1649,7 +1623,7 @@ input[type="checkbox"]:checked + label:after {
   background-color: #0f5a47;
   border-radius: 1.875rem;
   color: #ffffff;
-  font-family: "Alegreya Sans";
+  font-family: "Alegreya Sans - Extra Bold";
   font-size: 1.1875rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -1661,7 +1635,7 @@ input[type="checkbox"]:checked + label:after {
 
 .button__clear {
   color: #0f5a47;
-  font-family: "Alegreya Sans";
+  font-family: 'Alegreya Sans - Regular';
   font-size: 1.125rem;
   font-weight: 400; }
 
@@ -1687,11 +1661,202 @@ input[type="checkbox"]:checked + label:after {
   position: absolute;
   left: 0;
   top: -28%; }
+
+.container__product_prise {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .container__product_prise {
+      min-height: 100%; } }
+
+.slider_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 20%; }
+  @media screen and (max-width: 768px) {
+    .slider_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      min-height: 100%;
+      padding-top: 5%; } }
   @media screen and (max-width: 480px) {
-    .muesli {
-      display: none; } }
+    .slider_wrap {
+      position: absolute; } }
+
+.feature_left {
+  width: 50%; }
+  @media screen and (max-width: 768px) {
+    .feature_left {
+      width: 50%; } }
+  @media screen and (max-width: 480px) {
+    .feature_left {
+      width: 58%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.slide_img {
+  width: 22.6875rem;
+  height: 23.9375rem; }
+  @media screen and (max-width: 768px) {
+    .slide_img {
+      width: 18.125rem;
+      height: 19.125rem; } }
+
+.feature_right {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .feature_right {
+      width: 60%;
+      text-align: center; } }
+
+.consist__img {
+  width: 5.625rem;
+  height: 5.625rem;
+  background-color: #00accf;
+  position: absolute;
+  border-radius: 10%;
+  top: 14%;
+  right: 40%; }
+  @media screen and (max-width: 768px) {
+    .consist__img {
+      top: 1.25rem;
+      right: 0; } }
+
+.img-txt {
+  position: relative;
+  color: #ffffff;
+  font-family: "Alegreya Sans - Black Italic";
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  top: 71%;
+  right: -17%; }
+
+.consist__title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.consist__txt {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 5% 0 0 0; }
+
+.consist_disc {
+  color: #333333;
+  font-family: "Alegreya Sans";
+  font-size: 1.125rem;
+  font-weight: 400; }
+
+.calory {
+  color: #333333;
+  font-family: "Alegreya Sans";
+  font-size: 1.125rem;
+  font-weight: 700; }
+
+.consist_calory {
+  margin-top: 2.5rem;
+  width: 35%; }
+
+.consist_weight {
+  margin-top: 2.5rem;
+  width: 65%; }
+
+.consist__price {
+  margin-top: 2.1875rem;
+  width: 35%;
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: 3.75rem;
+  font-weight: 300;
+  line-height: 3.75rem;
+  text-transform: uppercase; }
+
+.consist__order {
+  margin-top: 3.1875rem;
+  width: 65%; }
+
+.composition {
+  position: absolute;
+  width: 5.4375rem;
+  height: 3.1875rem;
+  fill: #ffffff;
+  margin: 0.3125rem auto; }
+
+.slider {
+  z-index: 30;
+  position: absolute;
+  width: 1.3125rem;
+  height: 1.3125rem;
+  top: 56%; }
+  @media screen and (max-width: 768px) {
+    .slider {
+      top: 13%; } }
+
+.slider_left {
+  left: 11%; }
+
+.slider_right {
+  right: -7%; }
+  @media screen and (max-width: 768px) {
+    .slider_right {
+      right: 17%; } }
+
+.arrow {
+  width: 184%;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.arrow-2 {
+  width: 184%;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
 
 .menu {
+  position: relative;
   background: url(../img/menu-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1713,6 +1878,16 @@ input[type="checkbox"]:checked + label:after {
   position: absolute;
   top: -9%;
   left: 2.0625rem; }
+  @media screen and (max-width: 768px) {
+    .berry-3 {
+      z-index: 10; } }
+  @media screen and (max-width: 480px) {
+    .berry-3 {
+      width: 83px;
+      height: 90px;
+      top: -7%;
+      left: 1.0625rem;
+      z-index: 10; } }
 
 .menu__title {
   font-family: "Alegreya Sans";
@@ -1720,41 +1895,47 @@ input[type="checkbox"]:checked + label:after {
   font-weight: 700;
   text-transform: uppercase;
   position: absolute;
-  padding-left: 7.28%;
   padding-top: 9.46%;
-  color: inherit;
-  z-index: 10; }
+  color: inherit; }
+  @media screen and (max-width: 480px) {
+    .menu__title {
+      font-size: 36px; } }
 
-.menu__accordion {
+.menu__list {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  overflow: hidden; }
 
-.accordion__item {
+.menu_list-item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden; }
+  height: 100%; }
 
 .accordion__img {
-  position: relative; }
+  cursor: pointer; }
 
 .accordion__pic {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -webkit-filter: brightness(45%);
   filter: brightness(45%); }
+  @media screen and (max-width: 768px) {
+    .accordion__pic {
+      width: 70px; } }
 
 .accordion__title {
   position: absolute;
   bottom: 5%;
-  left: 25%;
+  left: 0%;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1765,5 +1946,38 @@ input[type="checkbox"]:checked + label:after {
   font-family: "Alegreya Sans";
   font-size: 3rem;
   font-weight: 500; }
+  @media screen and (max-width: 480px) {
+    .accordion__title {
+      font-size: 36px; } }
+
+.content_item-txt {
+  padding: 3.125rem 1.875rem 0 1.875rem;
+  font-family: "Alegreya Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 23.97px; }
+
+.content_item {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  max-width: 0;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  visibility: hidden;
+  opacity: 0; }
+
+.menu_list-item_active .content_item {
+  max-width: 33.75rem;
+  visibility: visible;
+  opacity: 1; }
+  @media screen and (max-width: 768px) {
+    .menu_list-item_active .content_item {
+      max-width: 35.75rem; } }
+  @media screen and (max-width: 480px) {
+    .menu_list-item_active .content_item {
+      max-width: 18.75rem; } }
 
 /*# sourceMappingURL=main.css.map */

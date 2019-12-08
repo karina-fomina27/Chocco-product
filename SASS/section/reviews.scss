@@ -52,10 +52,11 @@
 }
 
 .reviews-title {
-color: #323232;
+color: #0d0d0d;
 font-family: "Alegreya Sans";
-font-size: 30px;
-font-weight: 500;
+font-size: 48px;
+font-weight: 700;
+text-transform: uppercase;
 
   @include tablets{
     margin: rem(79px) 0 3.75rem 0;
@@ -75,7 +76,6 @@ font-weight: 500;
 }
 
 .reviews-list {
-  z-index: 10;
   width: 100%;
 }
 
@@ -134,6 +134,12 @@ font-weight: 500;
   
 }
 
+.reviews__comment__name{
+color: #666666;
+font-family: "Alegreya Sans";
+font-size: 18px;
+font-weight: 500;
+}
 .reviews__comment__title {
   color: #323232;
   font-family: "Alegreya Sans";
@@ -155,7 +161,7 @@ font-weight: 500;
   display: flex;
   position: relative;
   justify-content: center;
-  z-index: 20;
+ 
 }
 
 .carusel__item {

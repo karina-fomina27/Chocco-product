@@ -1,14 +1,210 @@
-.product__prise{
+
+.product__prise {
   background-color: #f8faf9;
 }
 
-.muesli{
+.muesli {
   display: block;
   position: absolute;
-  left:0;
-  top:-28%;
+  left: 0;
+  top: -28%;
 
-  @include phones{
-  display: none;
+  @include phones {}
+}
+
+.container__product_prise {
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablets {
+    min-height: 100%;
   }
+}
+
+.slider_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20%;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding-top: 5%;
+
+  }
+
+  @include phones {
+  position: absolute;
+  }
+}
+
+.feature_left {
+  width: 50%;
+
+  @include tablets {
+    width: 50%;
+  }
+
+  @include phones {
+    width: 58%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.slide_img {
+  width: rem(363px);
+  height: rem(383px);
+
+  @include tablets {
+    width: rem(290px);
+    height: rem(306px);
+  }
+
+}
+
+.feature_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablets {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+
+.consist__img {
+  width: rem(90px);
+  height: rem(90px);
+  background-color: #00accf;
+  position: absolute;
+  border-radius: 10%;
+  top: 14%;
+  right: 40%;
+
+  @include tablets {
+    top: rem(20px);
+    right: 0;
+  }
+}
+
+.img-txt {
+  position: relative;
+  color: #ffffff;
+  font-family: "Alegreya Sans - Black Italic";
+  font-size: rem(14px);
+  font-weight: 400;
+  text-transform: uppercase;
+  top: 71%;
+  right: -17%;
+
+}
+
+.consist__title {
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: rem(36px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.consist__txt {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 400;
+  margin: 5% 0 0 0;
+}
+
+.consist_disc {
+  color: #333333;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 400;
+}
+
+.calory {
+  color: #333333;
+  font-family: "Alegreya Sans";
+  font-size: rem(18px);
+  font-weight: 700;
+}
+
+.consist_calory {
+  margin-top: 2.5rem;
+  width: 35%;
+}
+
+.consist_weight {
+  margin-top: 2.5rem;
+  width: 65%;
+}
+
+.consist__price {
+  margin-top: 2.1875rem;
+  width: 35%;
+  color: #0d0d0d;
+  font-family: "Alegreya Sans";
+  font-size: rem(60px);
+  font-weight: 300;
+  line-height: rem(60px);
+  text-transform: uppercase;
+}
+
+.consist__order {
+  margin-top: 3.1875rem;
+  width: 65%;
+}
+
+.composition {
+  position: absolute;
+  width: rem(87px);
+  height: rem(51px);
+  fill: #ffffff;
+  margin: rem(5px) auto;
+}
+
+.slider {
+  z-index: 30;
+  position: absolute;
+  width: 1.3125rem;
+  height: 1.3125rem;
+  top: 56%;
+  
+  @include tablets{
+    top: 13%;
+  }
+
+}
+
+.slider_left {
+  left: 11%;
+}
+
+.slider_right {
+  right: -7%;
+
+  @include tablets{
+    right: 17%;
+  }
+
+}
+
+.arrow {
+  width: 184%;
+  transform: rotate(90deg);
+}
+
+.arrow-2 {
+  width: 184%;
+  transform: rotate(270deg);
 }

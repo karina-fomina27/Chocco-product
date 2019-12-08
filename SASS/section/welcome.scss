@@ -75,16 +75,17 @@ html {
   font-weight: 400;
   line-height: rem(30px);
   text-transform: uppercase;
+  
 
   &:before {
     content: url(../img/icon_png/phone_.png);
-    margin: 0 5% 0 0;
+    margin: 0 5%  0;
   }
 }
 
 .content__title {
   color: #ffffff;
-  font-family: "Alegreya Sans";
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: rem(60px);
   font-weight: 700;
   line-height: rem(60px);
@@ -113,7 +114,7 @@ html {
 .content-button {
   background-color: #ffffff;
   box-shadow: 0 0 rem(10px) rgba(63, 63, 63, 0.25);
-  font-family: "Alegreya Sans";
+  font-family: "Alegreya Sans - Extra Bold";
   font-size: rem(19px);
   font-weight: 400;
   text-transform: uppercase;

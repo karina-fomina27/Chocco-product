@@ -10,7 +10,7 @@
   }
 }
 
-.burger {
+ .burger{
   width: rem(24px);
   height: rem(4px);
   border-radius: 2px;
@@ -39,3 +39,36 @@
     border-radius: rem(2px);
   }
 }
+
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background: rgba(253, 253, 253, 0.95);
+  visibility: hidden;
+  opacity: 0;
+  }
+  
+  .modal_active .modal{
+  visibility: visible;
+  }
+
+  .mobile-menu__item{
+color: #ffffff;
+font-family: "Alegreya Sans";
+font-size: 36px;
+font-weight: 700;
+line-height: 40px;
+text-transform: uppercase;
+  }
+
+
+  
+
+
+  
