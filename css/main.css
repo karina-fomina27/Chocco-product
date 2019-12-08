@@ -71,7 +71,7 @@ textarea:focus {
 @font-face {
   font-family: 'Alegreya Sans - Extra Bold';
   /* Имя шрифта */
-  src: url(/fonts/AlegreyaSans-ExtraBold.woff);
+  src: url(../fonts/AlegreyaSans-ExtraBold.woff);
   /* Путь к файлу со шрифтом */ }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -971,7 +971,7 @@ template {
   position: relative; }
   @media screen and (max-width: 768px) {
     .welcome-page {
-      background-image: url(/img/bg768.jpg); } }
+      background-image: url(../img/bg768.jpg); } }
 
 .main__container {
   display: -webkit-box;

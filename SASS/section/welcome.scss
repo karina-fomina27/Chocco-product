@@ -22,7 +22,7 @@ html {
   position: relative;
 
   @include tablets {
-    background-image: url(/img/bg768.jpg);
+    background-image: url(../img/bg768.jpg);
    
   }
   }
