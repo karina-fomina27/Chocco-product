@@ -15,7 +15,7 @@
     <section class="section welcome-page">
       <div class="container welcome ">
         <header class="header">
-          <div class="header__container" >
+          <div class="header__container">
             <div class="header__logo">
               <a href="index.html" class="logo__link"><img class="logo__img" src="./img/CHO_CCO.png" alt="logo"></a>
             </div>
@@ -31,12 +31,9 @@
                   <li class="nav__item tel"><a class="nav__link icon-tel" href="#" title="">8 800 903 90 90</a></li>
                 </ul>
               </nav>
-              <div id="menuToggle">
-                <input type="checkbox" />
-                <span id="span1"></span>
-                <span id="span2"></span>
-                <span id="span3"></span>
-            </div>
+              <a href="#about-us" id="burger-wrap">
+                <div class="burger"></div>
+              </a>
             </div>
           </div>
         </header>
@@ -153,11 +150,66 @@
             </svg>
           </a>
           <div class="consist__img">
-            <svg class="composition">
+            <svg class="ingr">
               <use xlink:href="./svg/sprite.svg#composition">
               </use>
             </svg>
             <p class="img-txt">Состав</p>
+            <ul class="composition">
+              <li class="conposition_item">
+                <svg class="swg">
+                  <use xlink:href="./svg/sprite.svg#oat">
+                  </use>
+                </svg>
+                <span class="composition_name">Овес</span>
+                <span class="composition_weight">25 г</span>
+              </li>
+              <li class="conposition_item">
+                <svg class="swg">
+                  <use xlink:href="./svg/sprite.svg#seaweed">
+                  </use>
+                </svg>
+                <span class="composition_name">Мор. водоросли</span>
+                <span class="composition_weight">15г</span>
+              </li>
+              <li class="conposition_item">
+                <svg class="swg">
+                  <use xlink:href="./svg/sprite.svg#almond">
+                  </use>
+                </svg>
+                <span class="composition_name">Миндаль</span>
+                <span class="composition_weight">20г</span>
+              </li>
+              <li class="conposition_item">
+                <svg class="swg">
+                  <use xlink:href="./svg/sprite.svg#powdere_milk">
+                  </use>
+                </svg>
+                <span class="composition_name">Сухое молоко</span>
+                <span class="composition_weight">10г</span>
+              </li>
+              <li class="conposition_item"><svg class="swg">
+                  <use xlink:href="./svg/sprite.svg#pumpkin">
+                  </use>
+                </svg>
+                <span class="composition_name">Тыкв.Семечки</span>
+                <span class="composition_weight">20г</span>
+              </li>
+              <li class="conposition_item"><svg class="swg">
+                  <use xlink:href="./svg/sprite.svg#apitherapy">
+                  </use>
+                </svg>
+                <span class="composition_name">Зам.сахара</span>
+                <span class="composition_weight">4г</span>
+              </li>
+              <li class="conposition_item"><svg class="swg">
+                  <use xlink:href="./svg/sprite.svg#beans">
+                  </use>
+                </svg>
+                <span class="composition_name">Какао бобы</span>
+                <span class="composition_weight">4г</span>
+              </li>
+            </ul>
           </div>
 
           <div class="feature_left">
@@ -194,12 +246,12 @@
         </div>
       </div>
     </section>
-    <section class="section team">
+    <section class="section section_team">
       <img src="./img/berry1.png" alt="" class="team__berry">
-      <p class="section-title">
-        Команда
-      </p>
       <div class="container team__container">
+        <p class="section-title">
+          Команда
+        </p>
         <ul class="team__list">
           <li class="team__item">
             <div class="worker__container">
@@ -208,7 +260,7 @@
               </div>
               <div class="worker__name">
                 <p class="worker__name-descript">Борис Федорович</p>
-                <img src="./img/team/triangle.png" alt="" class="worker__name-pic ">
+                <img src="./img/team/triangle.png" alt="" class="worker__name-pic">
               </div>
               <div class="worker__descrip">
                 <div class="worker__post-title">
@@ -250,9 +302,9 @@
               </div>
               <div class="worker__name">
                 <p class="worker__name-descript">Кирилл Матросов</p>
-                <img src="./img/team/triangle.png" alt="" class="worker__name-pic worker__name-pic--rotated">
+                <img src="./img/team/triangle.png" alt="" class="worker__name-pic ">
               </div>
-              <div class="worker__descrip worker__descrip--close">
+              <div class="worker__descrip ">
                 <div class="worker__post-title">
                   <p class="worker__post-txt">Оператор</p>
                 </div>
@@ -342,42 +394,64 @@
         </ul>
       </div>
     </section>
-    <section class="section reviews">
-      <div class="container container--reviews">
-        <div class="reviews__wrap">
-          <h2 class="reviews-title">Отзывы</h2>
-        </div>
+    <section id="reviews" class="reviews section">
+      <div class="reviews__container container">
+        <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews-list">
-          <li class="reviews-item--1 reviews-item--active">
-            <div class="reviews__photo">
-              <img class="reviews__photo-title" src="./img/photo1.jpg" alt="Фотография Алёны">
+          <li class="reviews-list__item reviews-list__item--active">
+            <div class="reviews-list__img">
+              <img src="./img/photo1.jpg" alt="" class="reviews-list__pic">
             </div>
-            <div class="reviews__comment">
-              <h4 class="reviews__comment__title">
-                Лучший перекус
-              </h4>
-              <p class="reviews__comment__txt">
-                Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за
-                компьютером
+            <div class="reviews-list__review">
+              <h4 class="reviews-list__title">Лучший перекус</h4>
+              <p class="reviews-list__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В
+                течение дня сижу за компьютером
                 и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой.
-                Это приятно
+                Это
+                приятно
                 и удобно.
               </p>
-              <p class="reviews__comment__name">Алёна Хмельницкая</p>
+              <span class="reviews-list__name">Алёна Хмельницкая</span>
             </div>
           </li>
-
+          <li class="reviews-list__item">
+            <div class="reviews-list__img">
+              <img src="./img/photo2.jpg" alt="" class="reviews-list__pic">
+            </div>
+            <div class="reviews-list__review">
+              <h4 class="reviews-list__title">Лучшие батончики премиум уровня</h4>
+              <p class="reviews-list__text">
+                Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как
+                говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать.
+                Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
+              </p>
+              <span class="reviews-list__name">Мария Орлова</span>
+            </div>
+          </li>
+          <li class="reviews-list__item">
+            <div class="reviews-list__img">
+              <img src="./img/photo3.jpg" alt="" class="reviews-list__pic">
+            </div>
+            <div class="reviews-list__review">
+              <h4 class="reviews-list__title">Идеально подходят для спортсменов</h4>
+              <p class="reviews-list__text">
+                После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать.
+                А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот
+                качественный и экологичный продукт.
+              </p>
+              <span class="reviews-list__name">Вадим Грачев</span>
+            </div>
+          </li>
         </ul>
-
-        <ul class="reviews__carusel">
-          <li class="carusel__item">
-            <img src="./img/photocfrusel1.jpg" class="carusel__photo" alt="Фото Алены" width="67" height="68">
+        <ul class="carousel">
+          <li class="carousel__item carousel__item--active">
+            <img src="./img/photocfrusel1.jpg" alt="" class="carousel__img">
           </li>
-          <li class="carusel__item">
-            <img src="./img/photocarusel2.png" class="carusel__photo" alt="Фото Алены" width="67" height="68">
+          <li class="carousel__item">
+            <img src="./img/photocarusel2.png" alt="" class="carousel__img">
           </li>
-          <li class="carusel__item">
-            <img src="./img/photocarusel3.jpg" class="carusel__photo" alt="Фото Алены" width="67" height="68">
+          <li class="carousel__item">
+            <img src="./img/photocarusel3.jpg" alt="" class="carousel__img">
           </li>
         </ul>
       </div>
@@ -390,43 +464,43 @@
       <div class="container order__container">
         <img class="blackberry" src="./img/blackberry.png" alt="">
         <h2 class="title__form">Закажите доставку</h2>
-        <form action="#" class="form">
+        <form action="#" class="form" id="myForm" method="POST">
           <div class="form__col">
             <div class="form__wrap">
               <div class="form__row">
                 <label class="form__label">
                   <div class="label__txt">Имя</div>
-                  <input type="text" class="label__input" name="name">
+                  <input type="text" class="label__input" name="name" required>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__label">
                   <div class="label__txt">Телефон</div>
-                  <input type="text" class="label__input" name="phone">
+                  <input type="text" class="label__input" name="phone" required>
                 </label>
               </div>
               <div class="form__row form__street">
                 <label class="form__label">
                   <div class="label__txt">Улица</div>
-                  <input type="text" class="label__input" name="street">
+                  <input type="text" class="label__input" name="street" required>
                 </label>
               </div>
               <div class="form__row form__number">
                 <label class="form__label">
                   <div class="label__txt">Дом</div>
-                  <input type="text" class="label__input" name="phone">
+                  <input type="text" class="label__input" name="house" required>
                 </label>
                 <label class="form__label">
                   <div class="label__txt">Корпус</div>
-                  <input type="text" class="label__input" name="phone">
+                  <input type="text" class="label__input" name="body" required>
                 </label>
                 <label class="form__label">
                   <div class="label__txt">Квартира</div>
-                  <input type="text" class="label__input" name="phone">
+                  <input type="text" class="label__input" name="flat" required>
                 </label>
                 <label class="form__label">
                   <div class="label__txt">Этаж</div>
-                  <input type="text" class="label__input" name="phone">
+                  <input type="text" class="label__input" name="floor" required>
                 </label>
               </div>
             </div>
@@ -434,25 +508,26 @@
           <div class="form__col">
             <label class="form__label">
               <div class="label__txt">Комментарий</div>
-              <textarea class="label__textarea" name="comment" id="" cols="30" rows="10"></textarea>
+              <textarea class="label__textarea" name="comment" cols="30" rows="10" required>
+              </textarea>
             </label>
             <div class="radio__wrap">
               <label class="label__radio">
-                <input type="radio" name="payment">
+                <input type="radio" name="pay" checked>
                 <span>Потребуется сдача</span>
               </label>
               <label class="label__radio">
-                <input type="radio" name="payment">
+                <input type="radio" name="pay" checked>
                 <span>Оплата по карте</span>
               </label>
             </div>
             <div class="checkbox__wrap">
-              <input type="checkbox" id="cb1">
+              <input type="checkbox" id="cb1" name="callback">
               <label for="cb1">Не перезванивать</label>
             </div>
             <div class="buttons__wrap">
-              <a class="button__order">Заказать</a>
-              <a class="button__clear">Очистить</a>
+              <button type="submit" class="button__order" id="sendButton">Заказать</button>
+              <button type="reset" class="button__clear">Очистить</button>
             </div>
           </div>
           <img class="leaf_form" src="./img/leaf_form.png" alt="">
@@ -525,31 +600,36 @@
   </div>
   </div>
   <div class="modal" id="mymodal">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link" data-scroll-to="1">О нас</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link" data-scroll-to="2">Бургеры</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link" data-scroll-to="3">Команда</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link" data-scroll-to="4">Меню</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link" data-scroll-to="5">Отзывы</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a href="#" class="mobile-menu__link" data-scroll-to="7">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="modal__container">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">О нас</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Батончики</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Команда</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Меню</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Отзывы</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Как мы работаем</a>
+        </li>
+      </ul>
+    </div>
+    <div class="burger_active">
+      <div class="burger_close">
+      </div>
+  </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
+  <script src="./js/form.js"></script>
   <script src="./js/mine.js"></script>
 </body>
 

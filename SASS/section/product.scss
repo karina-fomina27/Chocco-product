@@ -40,7 +40,7 @@
   }
 
   @include phones {
-  position: absolute;
+    position: absolute;
   }
 }
 
@@ -81,7 +81,6 @@
   }
 }
 
-
 .consist__img {
   width: rem(90px);
   height: rem(90px);
@@ -90,10 +89,17 @@
   border-radius: 10%;
   top: 14%;
   right: 40%;
+  cursor: help;
 
+  &:hover >.composition{
+    opacity: 1;
+  }
+  
   @include tablets {
     top: rem(20px);
     right: 0;
+
+    
   }
 }
 
@@ -165,7 +171,7 @@
   width: 65%;
 }
 
-.composition {
+.ingr {
   position: absolute;
   width: rem(87px);
   height: rem(51px);
@@ -179,8 +185,8 @@
   width: 1.3125rem;
   height: 1.3125rem;
   top: 56%;
-  
-  @include tablets{
+
+  @include tablets {
     top: 13%;
   }
 
@@ -189,7 +195,7 @@
 .slider_left {
   left: -7%;
 
-  @include tablets{
+  @include tablets {
     left: 11%;
   }
 
@@ -198,11 +204,11 @@
 .slider_right {
   right: -7%;
 
-  @include tablets{
-    right: 17%;
+  @include tablets {
+    right: 5%;
   }
 
-  @include phones{
+  @include phones {
     right: 11%;
   }
 
@@ -217,3 +223,57 @@
   width: 184%;
   transform: rotate(270deg);
 }
+
+
+.composition{
+position: absolute ;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+top: 3% ;
+left: 105%;
+width: 270px;
+height: 382px;
+background-color: #ffffff;
+font-family: "Alegreya Sans";
+opacity: 0;
+transition: .6s;
+
+@include tablets{
+  left: -330%; 
+}
+
+}
+
+.conposition_item{
+display: flex;
+justify-content: space-around;
+width: 90%;
+align-items: center;
+padding:5px 5px;
+}
+.swg {
+  fill: black;
+  width: 25px;
+  height: 35px;
+
+}
+
+.composition_name {
+  color: #333333;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.composition_weight{
+color: #343333;
+font-family: "Alegreya Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+

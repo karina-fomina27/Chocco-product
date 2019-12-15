@@ -4,7 +4,9 @@
   top: -36%;
 }
 
-.team {
+.section_team {
+  position: relative;
+
   @include tablets {
     height: 100%;
   }
@@ -21,29 +23,31 @@
 }
 
 .team__container {
+  margin: 0 auto;
+  
   @include tablets {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
   }
 
   @include phones{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
   }
 }
 
 .team__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: rem(20px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 31.875rem;
+    justify-content: space-between;
+    margin-top: 10%;
 
   @include tablets {
     width: 70%;
-    display: flex;
-    flex-wrap: wrap;
+    min-height: 38.125rem;
+    justify-content: center;
+    
+    margin: 5% auto;
    
   }
   @include phones{
@@ -55,15 +59,20 @@
 
 }
 
+.worker__container{
+ 
+}
+
 .team__item {
   position: relative;
-
-
+  display: flex;
+  flex-direction: column;
+  
   @include tablets {
     margin-right: rem(20px);
   }
   @include phones {
-margin: 0;
+    margin: 0;
   }
 }
 
@@ -80,9 +89,7 @@ margin: 0;
   }
 }
 
-.worker__container{
 
-}
 .worker__name {
   display: flex;
   align-items: center;
@@ -108,10 +115,6 @@ margin: 0;
   }
 }
 
-.worker__name-pic--rotated {
-  transform: rotate(180deg);
-  transition: all 2s ease-out;
-}
 
 .worker__post-title {
   text-align: center;
@@ -137,12 +140,18 @@ margin: 0;
   font-weight: 300;
 }
 
-// .worker__descrip{
-// max-width:0;
-// overflow: hidden;
-// transition: all 2s ease-in;
-// }
-.worker__descrip--close {
+.worker__descrip{
+max-width:0;
+overflow: hidden;
+}
+
+.worker__descrip--expanted{
   max-width: rem(1000px);
-  transition: all 2s ease-in;
+  transition: all 4s ease-out;
+ 
+}
+
+.worker__name-pic--rotated {
+  transform: rotate(180deg);
+  transition: all 4s ease-out;
 }
