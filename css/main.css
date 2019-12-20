@@ -36,6 +36,10 @@ h6 {
   margin: 0;
   font-weight: normal; }
 
+button {
+  outline: none;
+  border: none; }
+
 input:focus,
 textarea:focus {
   outline: none;
@@ -44,7 +48,7 @@ textarea:focus {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden; }
 
 .section {
@@ -55,6 +59,14 @@ textarea:focus {
   width: 95%;
   max-width: 940px;
   margin: 0 auto; }
+
+.main_container {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s; }
 
 @font-face {
   font-family: 'Alegreya Sans';
@@ -558,7 +570,10 @@ template {
   margin-bottom: 0.1875rem;
   position: relative; }
   .fixed-menu__dot--active {
-    border-color: white; }
+    border-color: white;
+    -webkit-box-shadow: 0 0 10px #053d49;
+    box-shadow: 0 0 10px #053d49;
+    border-radius: 50%; }
   .fixed-menu__dot:before {
     content: '';
     width: 0.375rem;
@@ -816,6 +831,85 @@ template {
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s; }
+
+.order_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(47, 50, 52, 0.95);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10; }
+
+.modal_container {
+  width: 300px;
+  height: 172px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  background-color: #ffffff; }
+
+#order_modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(47, 50, 52, 0.92);
+  opacity: 0;
+  overflow: hidden; }
+
+.order_modal--active {
+  visibility: visible;
+  opacity: 1; }
+
+.order_modal_container {
+  width: 300px;
+  height: 172px;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1.5625rem 1.25rem; }
+
+.order_modal-title {
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.05px; }
+
+.order-link {
+  color: #ffffff;
+  font-family: "Alegreya Sans - Extra Bold";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 156px;
+  height: 58px;
+  background-color: #0f5a47;
+  border-radius: 5px; }
+  .order-link:hover {
+    cursor: pointer; }
 
 .reviews {
   position: relative;
@@ -1727,26 +1821,38 @@ input[type="checkbox"]:checked + label:after {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  @media screen and (max-width: 768px) {
-    .container__product_prise {
-      min-height: 100%; } }
 
 .slider_wrap {
+  overflow: hidden; }
+
+.slider_list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: left .5s;
+  -o-transition: left .5s;
+  transition: left .5s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
   padding-top: 20%; }
   @media screen and (max-width: 768px) {
-    .slider_wrap {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+    .slider_list {
+      padding-top: 8%; } }
+
+.slider_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+  @media screen and (max-width: 768px) {
+    .slider_item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1754,29 +1860,10 @@ input[type="checkbox"]:checked + label:after {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      min-height: 100%;
-      padding-top: 5%; } }
-  @media screen and (max-width: 480px) {
-    .slider_wrap {
-      position: absolute; } }
+      text-align: center; } }
 
 .feature_left {
   width: 50%; }
-  @media screen and (max-width: 768px) {
-    .feature_left {
-      width: 50%; } }
-  @media screen and (max-width: 480px) {
-    .feature_left {
-      width: 58%;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
 
 .slide_img {
   width: 22.6875rem;
@@ -1794,10 +1881,6 @@ input[type="checkbox"]:checked + label:after {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-  @media screen and (max-width: 768px) {
-    .feature_right {
-      width: 60%;
-      text-align: center; } }
 
 .consist__img {
   width: 5.625rem;
@@ -1806,8 +1889,7 @@ input[type="checkbox"]:checked + label:after {
   position: absolute;
   border-radius: 10%;
   top: 14%;
-  right: 40%;
-  cursor: help; }
+  right: 40%; }
   .consist__img:hover > .composition {
     opacity: 1; }
   @media screen and (max-width: 768px) {
@@ -1881,29 +1963,27 @@ input[type="checkbox"]:checked + label:after {
   margin: 0.3125rem auto; }
 
 .slider {
-  z-index: 30;
   position: absolute;
   width: 1.3125rem;
   height: 1.3125rem;
-  top: 56%; }
+  top: 40%; }
   @media screen and (max-width: 768px) {
     .slider {
-      top: 13%; } }
+      top: 20%; } }
 
 .slider_left {
-  left: -7%; }
+  left: -7%;
+  position: absolute; }
   @media screen and (max-width: 768px) {
     .slider_left {
-      left: 11%; } }
+      left: 20%; } }
 
 .slider_right {
-  right: -7%; }
+  right: 3%;
+  position: absolute; }
   @media screen and (max-width: 768px) {
     .slider_right {
-      right: 5%; } }
-  @media screen and (max-width: 480px) {
-    .slider_right {
-      right: 11%; } }
+      right: 20%; } }
 
 .arrow {
   width: 184%;
@@ -1919,6 +1999,7 @@ input[type="checkbox"]:checked + label:after {
 
 .composition {
   position: absolute;
+  z-index: 30;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

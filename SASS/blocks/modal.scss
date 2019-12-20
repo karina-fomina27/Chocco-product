@@ -1,0 +1,159 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 50, 52, .95);
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+
+.mobile-menu__link {
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+
+
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.burger_active {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 28px;
+  right: 30px;
+}
+
+.burger_close {
+  width: 1.5625rem;
+  height: 0.25rem;
+  background: #ffffff;
+  border-radius: 0.3125rem;
+  position: relative;
+
+
+
+  &:hover {
+    cursor: pointer;
+
+  }
+}
+
+.burger_close::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0.25rem;
+  height: 1.5625rem;
+  background: #ffffff;
+  border-radius: 0.3125rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .3s;
+}
+
+.body--active {
+  overflow: hidden;
+  transition: opacity .3s;
+}
+
+.order_modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 50, 52, .95);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+
+}
+
+.modal_container {
+  width: 300px;
+  height: 172px;
+  box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  background-color: #ffffff;
+}
+
+
+
+#order_modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(47, 50, 52, .92);
+  opacity: 0;
+  overflow: hidden;
+ 
+}
+
+.order_modal--active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.order_modal_container{
+  width: 300px;
+  height: 172px;
+  box-shadow: 0 0 40px rgba(0, 0, 1, 0.22);
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1.5625rem 1.25rem;
+}
+
+.order_modal-title{
+  color: #000000;
+  font-family: "Alegreya Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.05px;
+}
+
+.order-link {
+  color: #ffffff;
+  font-family: "Alegreya Sans - Extra Bold";
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 156px;
+  height: 58px;
+  background-color: #0f5a47;
+  border-radius: 5px;
+  
+  &:hover{
+    cursor: pointer;
+  }
+}

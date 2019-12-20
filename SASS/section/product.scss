@@ -1,4 +1,3 @@
-
 .product__prise {
   background-color: #f8faf9;
 }
@@ -18,44 +17,57 @@
   flex-direction: column;
   justify-content: center;
 
-  @include tablets {
-    min-height: 100%;
-  }
+  @include tablets {}
 }
 
+
 .slider_wrap {
+  overflow: hidden;
+
+
+}
+
+
+
+.slider_list {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: left .5s;
+  transform: translateX(0);
   padding-top: 20%;
 
   @include tablets {
-    display: flex;
+    padding-top: 8%;
+  }
+
+  @include phones {}
+}
+
+.slider_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+
+
+  @include tablets {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    padding-top: 5%;
+    text-align: center;
 
   }
 
-  @include phones {
-    position: absolute;
-  }
 }
 
 .feature_left {
   width: 50%;
 
-  @include tablets {
-    width: 50%;
-  }
 
-  @include phones {
-    width: 58%;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .slide_img {
@@ -75,10 +87,8 @@
   display: flex;
   flex-wrap: wrap;
 
-  @include tablets {
-    width: 60%;
-    text-align: center;
-  }
+
+  @include tablets {}
 }
 
 .consist__img {
@@ -89,17 +99,17 @@
   border-radius: 10%;
   top: 14%;
   right: 40%;
-  cursor: help;
 
-  &:hover >.composition{
+
+  &:hover>.composition {
     opacity: 1;
   }
-  
+
   @include tablets {
     top: rem(20px);
     right: 0;
 
-    
+
   }
 }
 
@@ -180,37 +190,38 @@
 }
 
 .slider {
-  z-index: 30;
   position: absolute;
   width: 1.3125rem;
   height: 1.3125rem;
-  top: 56%;
+  top: 40%;
 
   @include tablets {
-    top: 13%;
+    top: 20%;
   }
 
 }
 
 .slider_left {
   left: -7%;
+  position: absolute;
 
   @include tablets {
-    left: 11%;
+
+    left: 20%;
   }
 
 }
 
 .slider_right {
-  right: -7%;
+  right: 3%;
+  position: absolute;
 
   @include tablets {
-    right: 5%;
+    
+    right: 20%;
   }
 
-  @include phones {
-    right: 11%;
-  }
+  @include phones {}
 
 }
 
@@ -225,34 +236,38 @@
 }
 
 
-.composition{
-position: absolute ;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-top: 3% ;
-left: 105%;
-width: 270px;
-height: 382px;
-background-color: #ffffff;
-font-family: "Alegreya Sans";
-opacity: 0;
-transition: .6s;
+.composition {
+  position: absolute;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 3%;
+  left: 105%;
+  width: 270px;
+  height: 382px;
+  background-color: #ffffff;
+  font-family: "Alegreya Sans";
+  opacity: 0;
+  transition: .6s;
 
-@include tablets{
-  left: -330%; 
+  @include tablets {
+    left: -330%;
+  }
+
 }
 
+.conposition_item {
+
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  align-items: center;
+  padding: 5px 5px;
+
 }
 
-.conposition_item{
-display: flex;
-justify-content: space-around;
-width: 90%;
-align-items: center;
-padding:5px 5px;
-}
 .swg {
   fill: black;
   width: 25px;
@@ -269,11 +284,10 @@ padding:5px 5px;
   text-align: left;
 }
 
-.composition_weight{
-color: #343333;
-font-family: "Alegreya Sans";
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
+.composition_weight {
+  color: #343333;
+  font-family: "Alegreya Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
-

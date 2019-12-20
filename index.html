@@ -9,9 +9,14 @@
   <link rel="stylesheet" href="./css/main.css">
   <title>Главная страница</title>
 </head>
-
 <body>
   <div class="wrapper">
+    <div class="order_modal">
+      <div class="order_modal_container">
+      <div class="order_modal-title">Сообщение отправлено</div>
+    <button  class="order-link">Закрыть</button></div>
+  </div>
+  <div class="maincontent">
     <section class="section welcome-page">
       <div class="container welcome ">
         <header class="header">
@@ -88,9 +93,8 @@
         </div>
         <img src="./img/leafwalcome.png" alt="" class="leaf-welcome">
       </div>
-
     </section>
-    <section class="section about-us">
+    <section class="section about-us" >
       <div class="container about-us__wrap">
         <div class="info">
           <h1 class="info-title">почему chocco?</h1>
@@ -139,16 +143,16 @@
         </ul>
       </div>
     </section>
-    <section class="section product__prise">
+    <section class="section product__prise" >
       <img class="muesli" src="./img/razz.png" alt="berry">
       <div class="container container__product_prise">
+        <a href="#" class="slider slider_left">
+          <svg class="arrow">
+            <use xlink:href="./svg/sprite.svg#arrow">
+            </use>
+          </svg>
+        </a>
         <div class="slider_wrap">
-          <a href="#" class="slider slider_left">
-            <svg class="arrow">
-              <use xlink:href="./svg/sprite.svg#arrow">
-              </use>
-            </svg>
-          </a>
           <div class="consist__img">
             <svg class="ingr">
               <use xlink:href="./svg/sprite.svg#composition">
@@ -211,7 +215,8 @@
               </li>
             </ul>
           </div>
-
+          <ul class="slider_list">
+            <li class="slider_item active"> 
           <div class="feature_left">
             <img src="./img/sllide.png" alt="" class="slide_img">
           </div>
@@ -237,16 +242,43 @@
               <a class="button__order">Заказать</a>
             </div>
           </div>
+        </li>
+        <li class="slider_item">
+          <div class="feature_left">
+            <img src="./img/slide2.png" alt="" class="slide_img">
+          </div>
+          <div class="feature_right">
+            <div class="consist__title">Батончик “Гранола 
+              виноград”
+            </div>
+            <p class="consist__txt">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+            <div class="consist_calory">
+              <div class="consist_disc">Каллорийность</div>
+              <div class="calory">120 ккал</div>
+            </div>
+            <div class="consist_weight">
+              <div class="consist_disc">Веc</div>
+              <div class="calory">98 грамм</div>
+            </div>
+            <div class="consist__price">
+              140 ₽
+            </div>
+            <div class="consist__order">
+              <a class="button__order">Заказать</a>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
           <a href="#" class="slider slider_right">
             <svg class="arrow-2">
               <use xlink:href="./svg/sprite.svg#arrow">
               </use>
             </svg>
           </a>
-        </div>
       </div>
     </section>
-    <section class="section section_team">
+    <section class="section section_team" >
       <img src="./img/berry1.png" alt="" class="team__berry">
       <div class="container team__container">
         <p class="section-title">
@@ -343,7 +375,7 @@
         </ul>
       </div>
     </section>
-    <section class="section menu">
+    <section class="section menu" >
       <div class="container accordion__container">
         <img class="berry-3" src="./img/berry3.png" alt="berry">
         <h2 class="menu__title">Меню</h2>
@@ -456,11 +488,11 @@
         </ul>
       </div>
     </section>
-    <section class="section video">
+    <section class="section video" >
       <img src="./img/3-layers.png" alt="berry" class="berry2">
       <div class="container"></div>
     </section>
-    <section class="section order">
+    <section class="section order" >
       <div class="container order__container">
         <img class="blackberry" src="./img/blackberry.png" alt="">
         <h2 class="title__form">Закажите доставку</h2>
@@ -570,35 +602,33 @@
       </div>
     </footer>
   </div>
-  </div>
   <ul class="fixed-menu">
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot fixed-menu__dot--active"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot" ></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot" ></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot" ></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot" ></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot" ></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+      <a class="fixed-menu__dot" ></a>
     </li>
   </ul>
-  </div>
-  </div>
+
   <div class="modal" id="mymodal">
     <div class="modal__container">
       <ul class="mobile-menu__list">
@@ -626,11 +656,14 @@
       <div class="burger_close">
       </div>
   </div>
-  </div>
+</div>
+
+</div>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src="./js/form.js"></script>
   <script src="./js/mine.js"></script>
+  
 </body>
 
 </html>

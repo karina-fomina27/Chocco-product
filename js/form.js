@@ -1,8 +1,14 @@
 
 const myForm = document.querySelector('#myForm');
 const sendButton = document.querySelector('#sendButton');
+const modal = document.querySelector(".order_modal");
+const container = document.querySelector(".order_modal_container");
+const sendOpen = document.querySelector("#sendButton");
+const hiding = document.querySelector(".order-link");
+const text = document.querySelector (".order_modal-title")
+const body = document.querySelector('.body');
 
-myForm.addEventListener('submit', (e) => {
+ myForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const formData = new FormData();
@@ -15,7 +21,23 @@ myForm.addEventListener('submit', (e) => {
    xhr.responseType = 'json';
    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
    xhr.send(formData);
+   xhr.onerror = function(){
+   
+   }
+   xhr.addEventListener('load', () => {
+   
+    modal.classList.add('order_modal--active');
+    text.textContent = xhr.response.message;
+
+    hiding.addEventListener('click', () => {
+      modal.classList.remove('order_modal--active');
+     
+    })
+  
 });
+
+});
+
 
 function validateForm(form) {
   let valid = true;
@@ -24,6 +46,9 @@ function validateForm(form) {
     valid = false;
   }
   if (!validateField(form.elements.phone)) {
+    valid = false;
+  }
+  if (!validateField(form.elements.pcomment)) {
     valid = false;
   }
 
@@ -36,3 +61,21 @@ function validateField(field) {
   return field.checkValidity();
 
 }
+
+
+
+
+//   const modal = document.querySelector(".order_modal");
+//   const sendOpen = document.querySelector("#sendButton");
+//   const hiding= document.querySelector(".order-link");
+  
+//   sendOpen.addEventListener("click", function () {
+//     modal.classList.toggle("order_modal--active");
+   
+//   });
+  
+//   hiding.addEventListener("click", function () {
+//     modal.classList.toggle("order_modal--active");
+//     console.log('click');
+//   });
+// });

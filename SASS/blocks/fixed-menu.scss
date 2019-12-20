@@ -21,9 +21,12 @@
   border: rem(1px) solid transparent;
   margin-bottom: rem(3px);
   position: relative;
+  
 
   &--active {
     border-color: white;
+    box-shadow: 0 0 10px #053d49;
+    border-radius: 50%;
   }
 
   &:before {
@@ -36,5 +39,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
   }
 }
