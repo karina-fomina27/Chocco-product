@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
     <button  class="order-link">Закрыть</button></div>
   </div>
   <div class="maincontent">
-    <section class="section welcome-page">
+    <section class="section welcome-page active">
       <div class="container welcome ">
         <header class="header">
           <div class="header__container">
@@ -27,13 +27,13 @@
             <div class="header__nav">
               <nav class="nav">
                 <ul class="nav__menu">
-                  <li class="nav__item"><a class="nav__link" href="#" title="">О нас</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#" title="">Батончики</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#" title="">Команда</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#" title="">Меню</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#" title="">Отзывы</a></li>
-                  <li class="nav__item"><a class="nav__link" href="#" title="">Как мы работаем</a></li>
-                  <li class="nav__item tel"><a class="nav__link icon-tel" href="#" title="">8 800 903 90 90</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#" data-scroll-to="0">О нас</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#" data-scroll-to="1">Батончики</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#" data-scroll-to="3">Команда</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#" data-scroll-to="4">Меню</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#" data-scroll-to="5">Отзывы</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#" data-scroll-to="6">Как мы работаем</a></li>
+                  <li class="nav__item tel"><a class="nav__link icon-tel" href="#"data-scroll-to="7" >8 800 903 90 90</a></li>
                 </ul>
               </nav>
               <a href="#" id="burger-wrap">
@@ -603,29 +603,32 @@
     </footer>
   </div>
   <ul class="fixed-menu">
-    <li class="fixed-menu__item">
-      <a class="fixed-menu__dot fixed-menu__dot--active"></a>
+    <li class="fixed-menu__item fixed-menu__dot--active">
+      <a class="fixed-menu__dot" href=""data-scroll-to="0" ></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" ></a>
+      <a class="fixed-menu__dot" href="" data-scroll-to="1"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" ></a>
+      <a class="fixed-menu__dot"href="" data-scroll-to="2"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot"></a>
+      <a class="fixed-menu__dot" href="" data-scroll-to="3"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" ></a>
+      <a class="fixed-menu__dot" href="" data-scroll-to="4"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" ></a>
+      <a class="fixed-menu__dot" href="" data-scroll-to="5"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" ></a>
+      <a class="fixed-menu__dot" href="" data-scroll-to="6"></a>
     </li>
     <li class="fixed-menu__item">
-      <a class="fixed-menu__dot" ></a>
+      <a class="fixed-menu__dot"href="" data-scroll-to="7"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot"href="" data-scroll-to="8"></a>
     </li>
   </ul>
 
@@ -657,7 +660,6 @@
       </div>
   </div>
 </div>
-
 </div>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>

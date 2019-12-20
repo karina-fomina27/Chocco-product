@@ -110,10 +110,10 @@ $(function () {
 });
 
 // Слайд-шоу
-(function() {
+(function () {
   let carouselItems = document.querySelectorAll('.carousel__item'),
     carouselItemsLength = carouselItems.length,
-  reviewsBlockItems = document.querySelectorAll('.reviews-list__item');
+    reviewsBlockItems = document.querySelectorAll('.reviews-list__item');
 
   for (let i = 0; i < carouselItemsLength; ++i) {
     carouselItems[i].addEventListener('click', function (e) {
@@ -130,7 +130,7 @@ $(function () {
 // scroll
 
 // $(function(){
- 
+
 //   $ ('a[data-target^= "anchor"]').bind('click.smoothscroll', function(){
 //    var target = $(this).attr('href'),
 //     bl_top = $(target).offset().top
@@ -149,15 +149,93 @@ $(function () {
 //     el.classList.toggle("fixed-menu__dot--active");
 //   }));
 
+// Open Page Scroll
 const section = $('.section');
 const display = $('.maincontent');
+let inScroll = false;
 
-$(window).on("wheel", e =>{
+const performTransition = sectionEq => {
+  if (inScroll == false) {
+
+    inScroll = true;
+    const position = sectionEq * -100;
+
+    section.eq(sectionEq).addClass("active").siblings().removeClass("active");
+
+    display.css({
+      transform: `translateY(${position}%)`
+    });
+
+    setTimeout(() => {
+      inScroll = false;
+
+    $(".fixed-menu__item")
+    .eq(sectionEq)
+    .addClass("fixed-menu__dot--active")
+    .siblings()
+    .removeClass('fixed-menu__dot--active')
+    }, 1300);
+
+  }
+
+};
+
+const scrollToSection = direction => {
+  const activeSection = section.filter('.active');
+  const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
+
+  if (direction == "next" && nextSection.length) {
+    performTransition(nextSection.index());
+  }
+
+  if (direction == "prev" && prevSection.length) {
+    performTransition(prevSection.index());
+  }
+
+};
+
+$(window).on("wheel", e => {
 
   const deltaY = e.originalEvent.deltaY;
 
   console.log(deltaY);
 
+  if (deltaY > 0) {
+
+    scrollToSection("next");
+  }
+
+  if (deltaY < 0) {
+    scrollToSection("prev");
+
+  }
+
 });
 
+$(window).on('keydown', e => {
 
+  const tagName = e.target.tagName.toLowerCase();
+
+  if (tagName != 'input' && tagName != "textarea") {
+    switch (e.keyCode) {
+      case 38:
+        scrollToSection('prev');
+        break;
+
+      case 40:
+        scrollToSection('next');
+        break;
+    }
+  }
+});
+
+$("[data-scroll-to]").on("click", e =>{
+ e.preventDefault();
+
+ const $this = $(e.currentTarget);
+ const target = $this.attr("data-scroll-to");
+
+ performTransition(target);
+
+});

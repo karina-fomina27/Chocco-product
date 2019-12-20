@@ -1363,8 +1363,7 @@ template {
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 1.875rem; }
+  text-align: center; }
 
 .team__container {
   margin: 0 auto; }
@@ -1379,7 +1378,6 @@ template {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-height: 31.875rem;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1387,7 +1385,6 @@ template {
   @media screen and (max-width: 768px) {
     .team__list {
       width: 70%;
-      min-height: 38.125rem;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;

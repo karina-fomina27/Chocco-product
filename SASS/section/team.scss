@@ -19,7 +19,7 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-top: rem(30px);
+  // margin-top: rem(30px);
 }
 
 .team__container {
@@ -38,13 +38,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 31.875rem;
+    // min-height: 31.875rem;
     justify-content: space-between;
     margin-top: 10%;
 
   @include tablets {
     width: 70%;
-    min-height: 38.125rem;
+    // min-height: 38.125rem;
     justify-content: center;
     
     margin: 5% auto;
