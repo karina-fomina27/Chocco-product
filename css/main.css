@@ -60,7 +60,7 @@ textarea:focus {
   max-width: 940px;
   margin: 0 auto; }
 
-.main_container {
+.maincontent {
   height: 100%;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;

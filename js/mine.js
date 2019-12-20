@@ -152,3 +152,12 @@ $(function () {
 const section = $('.section');
 const display = $('.maincontent');
 
+$(window).on("wheel", e =>{
+
+  const deltaY = e.originalEvent.deltaY;
+
+  console.log(deltaY);
+
+});
+
+
