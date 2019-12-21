@@ -52,8 +52,12 @@ textarea:focus {
   overflow: hidden; }
 
 .section {
-  height: 100vh;
-  position: relative; }
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 650px; }
 
 .container {
   width: 95%;
@@ -1143,7 +1147,8 @@ template {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding-top: 39%; } }
+      padding-top: 39%;
+      height: 100%; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
     .main__container {
       padding-top: 65%; } }
