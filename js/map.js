@@ -8,7 +8,7 @@ var placemarks = [
     balloonContent: [
       '<div class="map__balloon">',
       'Москва, ул.Новый Арбат, д.31/12',
-      '<img class="map__mark-img" src="/img/bar.png"',
+      '<img class="map__mark-img" src="./img/bar.png"',
       '</div>'
     ]
   },
@@ -19,7 +19,7 @@ var placemarks = [
     balloonContent: [
       '<div class="map__balloon">',
       'Москва, ул.Новый Арбат, д.31/12',
-      '<img class="map__mark-img" src="/img/bar.png"',
+      '<img class="map__mark-img" src="./img/bar.png"',
       '</div>'
     ]
   },
@@ -30,7 +30,7 @@ var placemarks = [
     balloonContent: [
       '<div class="map__balloon">',
       'Москва, ул.Новый Арбат, д.31/12',
-      '<img class="map__mark-img" src="/img/bar.png"',
+      '<img class="map__mark-img" src="./img/bar.png"',
       '</div>'
     ]
   },
@@ -41,7 +41,7 @@ var placemarks = [
     balloonContent: [
       '<div class="map__balloon">',
       'Москва, ул.Новый Арбат, д.31/12',
-      '<img class="map__mark-img" src="../img/bar.png"',
+      '<img class="map__mark-img" src="./img/bar.png"',
       '</div>'
     ]
   }
