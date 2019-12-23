@@ -490,7 +490,29 @@
     </section>
     <section class="section video" >
       <img src="./img/3-layers.png" alt="berry" class="berry2">
-      <div class="container"></div>
+      <img src="./img/videoimg.png" alt="leaf" class="video_decor-right">
+      <img src="./img/videoimg2.png" alt="leaf" class="video_decor-left">
+      <div class="container container_video">
+        <h2 class="video_title">Как мы работаем</h2>
+        <div class="video__player">
+          <video id="player" poster="./img/poster-video.png">
+              <source src="./video/videoplayback.mp4" type="video/mp4">
+          </video>
+          <img src="./img/Play-white.png" alt="" class="play video__player-img">
+      </div>
+      <div class="video__toolbar">
+          <div class="duration">
+          <div class="duration__play"></div>
+              <input type="range" class="duration__length" id="durationLevel">
+          </div>
+          <div class="sound">
+              <img src="./img/Volum_gray.png" class="sound__mic" id="mic" alt="">
+              <div class="sound__volume">
+                  <input type="range" class="duration__length duration__length--other" id="micLevel">
+              </div>
+          </div>
+      </div>
+      </div>
     </section>
     <section class="section order" >
       <div class="container order__container">
@@ -567,8 +589,9 @@
         <img class="blueberries" src="./img/blueberries.png" alt="">
       </div>
     </section>
-    <section class="section map">
-      <div class="container"></div>
+    <section class="section map_section">
+      <div id="map" class="map"></div>
+
     </section>
     <footer class="footer">
       <div class=" container container__footer">
@@ -664,6 +687,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
   <script src="./js/jquery.touchSwipe.min.js"></script>
   <script src="./js/mobile-detect.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="./js/map.js"></script>
   <script src="./js/form.js"></script>
   <script src="./js/mine.js"></script>
   

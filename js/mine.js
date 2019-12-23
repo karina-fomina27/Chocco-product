@@ -158,10 +158,16 @@ const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
 
 const performTransition = sectionEq => {
-  if (inScroll == false) {
+  if (inScroll) return;
 
     inScroll = true;
+
+    const transitionIsOver = 1000;
+    const mouseInversionIsOver = 300;
+
     const position = sectionEq * -100;
+
+    if (isNaN(position)) console.error("передано неверное значение в performTransition")
 
     section.eq(sectionEq).addClass("active").siblings().removeClass("active");
 
@@ -177,16 +183,16 @@ const performTransition = sectionEq => {
     .addClass("fixed-menu__dot--active")
     .siblings()
     .removeClass('fixed-menu__dot--active')
-    }, 1300);
+    }, transitionIsOver + mouseInversionIsOver);
 
   }
 
-};
 
-const scrollToSection = direction => {
+  const scrollToSection = direction => {
   const activeSection = section.filter('.active');
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
+  
 
   if (direction == "next" && nextSection.length) {
     performTransition(nextSection.index());
@@ -216,11 +222,12 @@ $(window).on("wheel", e => {
 
 });
 
-$(window).on('keydown', e => {
+$(document).on('keydown', e => {
 
   const tagName = e.target.tagName.toLowerCase();
+  const userTypingInInputs = tagName != 'input' && tagName != "textarea"
 
-  if (tagName != 'input' && tagName != "textarea") {
+  if (userTypingInInputs) {
     switch (e.keyCode) {
       case 38:
         scrollToSection('prev');
@@ -254,3 +261,129 @@ if (isMobile){
   
 }
 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+
+
+
+
+let video;
+let durationControl; 
+let soundControl;
+let intervalId;
+
+// документ полностью загружен
+$().ready(function(){
+    video = document.getElementById("player"); 
+
+    // вешаем обработчик события onclick на тег video
+    video.addEventListener('click', playStop);
+
+    // обработчики событий для кнопок play
+    let playButtons = document.querySelectorAll(".duration__play");
+    for (let i = 0; i < playButtons.length;i++){
+        playButtons[i].addEventListener('click',playStop);
+    }
+
+    // обработчик событий для кнопки динамик
+    let micControl = document.getElementById("mic");
+    micControl.addEventListener('click',soundOf)
+    
+    // обработчики событий для ползунка продолжительности видео
+    durationControl = document.getElementById("durationLevel");    
+    durationControl.addEventListener('click',setVideoDuration);
+    durationControl.addEventListener('onmousemove',setVideoDuration);
+    durationControl.addEventListener('mousedown', stopInterval); 
+    durationControl.min = 0;
+    durationControl.value = 0;    
+
+    // обработчики событий для ползунка громокости
+    soundControl = document.getElementById("micLevel");    
+    soundControl.addEventListener('click', changeSoundVolume);
+    soundControl.addEventListener('onmousemove', changeSoundVolume);
+
+    // задаем максимальные и минимальные значения громокости
+    soundControl.min = 0;
+    soundControl.max = 10;
+    // присваиваем ползунку максимальное значение
+    soundControl.value = soundControl.max;
+    
+});
+
+/*
+ Воспроизведение видео
+*/
+function playStop(){
+  durationControl.max = video.duration;
+  if (video.paused){
+      video.play();
+      intervalId = setInterval(updateDuration, 1000/66)
+      $(".video__player-img").addClass("video__player-img--active");
+      $(".duration__play").addClass("duration__play--active");
+  } else{
+      video.pause();  
+      clearInterval(intervalId);
+      $(".video__player-img").removeClass("video__player-img--active");
+      $(".duration__play").removeClass("duration__play--active"); 
+  }
+}
+
+/*
+    Управление звуком
+*/
+function soundOf(){    
+    /*
+        Делаем проверку уровня громкости. 
+        Если у нас нашего видео есть звук, то мы его выключаем. 
+        Предварительно запомнив текущую позицию громкости в переменную soundLevel
+    */
+    if (video.volume ===0){
+        video.volume = soundLevel;
+        soundControl.value = soundLevel*10;
+    }else{
+        /*
+            Если у нашего видео нет звука, то выставляем уровень громкости на прежний уровень.
+            Хранится в перменной soundLevel
+        */
+        soundLevel = video.volume;
+        video.volume = 0;
+        soundControl.value = 0;
+    }    
+}
+
+function stopInterval(){
+    clearInterval(intervalId);
+}
+
+/*
+    Реализует возможность перемотки нашего видео
+*/
+function setVideoDuration(){
+    video.currentTime = durationControl.value;   
+    intervalId = setInterval(updateDuration,1000/66);    
+}
+
+/*
+    Управление звуком видео
+*/
+function changeSoundVolume(){
+    /*
+        Св-во volume может принимать значения от 0 до 1
+        Делим на 10 для того что бы, была возможность более точной регулировки видео. 
+    */
+    video.volume = soundControl.value/10;  
+}
+
+/*
+  Функция для обновления позиции ползунка продолжительности видео.   
+*/
+function updateDuration(){    
+    durationControl.value = video.currentTime;
+}

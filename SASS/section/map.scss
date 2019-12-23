@@ -1,7 +1,18 @@
-.map{
-  background-image:url(../img/map.jpg);
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
-  }
-  
+.map {
+  height: 100%;
+  width: 100%;
+
+}
+
+.map__balloon {
+  font-family: "Alegreya Sans", sans-serif;
+  color: #0f5a47;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.map__mark-img {
+  width: 70px;
+  height: 70px;
+}
