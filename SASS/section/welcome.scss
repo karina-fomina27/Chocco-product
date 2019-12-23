@@ -36,8 +36,8 @@ html {
       width: 100%;
       align-items: center;
       justify-content: center;
-      padding-top: 39%;
-        height: 100%;
+      padding-top: 35%;
+      height: 100%;
 
       
   @include phones{
@@ -222,8 +222,8 @@ html {
   right: 22%;
 
   @include tablets {
-    width: 49%;
-    height: 44%;
+    width: 45%;
+    height: 43%;
     position: absolute;
     top: 0;
     right: 27%;

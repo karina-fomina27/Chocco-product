@@ -50,9 +50,11 @@ close.addEventListener("click", function () {
   mymodal.classList.toggle("modal--active");
   document.body.classList.toggle("body--active");
   console.log('click');
+
+  
 });
 
-
+// Слайдер "меню"
 $(function () {
 
   $('.slider_right').on('click', function (e) {
@@ -109,7 +111,7 @@ $(function () {
 
 });
 
-// Слайд-шоу
+// Слайд-шоу "отзывы"
 (function () {
   let carouselItems = document.querySelectorAll('.carousel__item'),
     carouselItemsLength = carouselItems.length,
@@ -187,7 +189,6 @@ const performTransition = sectionEq => {
 
   }
 
-
   const scrollToSection = direction => {
   const activeSection = section.filter('.active');
   const nextSection = activeSection.next();
@@ -249,7 +250,7 @@ $("[data-scroll-to]").on("click", e =>{
  performTransition(target);
 
 });
-
+// Open Page Scroll для мобильной версии
 if (isMobile){
   $("body").swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -273,6 +274,7 @@ function pauseVid() {
 
 
 
+// Воспроизведение видео
 
 let video;
 let durationControl; 
@@ -317,9 +319,7 @@ $().ready(function(){
     
 });
 
-/*
- Воспроизведение видео
-*/
+
 function playStop(){
   durationControl.max = video.duration;
   if (video.paused){
@@ -387,3 +387,5 @@ function changeSoundVolume(){
 function updateDuration(){    
     durationControl.value = video.currentTime;
 }
+
+

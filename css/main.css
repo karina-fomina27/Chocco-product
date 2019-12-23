@@ -1147,7 +1147,7 @@ template {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding-top: 39%;
+      padding-top: 35%;
       height: 100%; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
     .main__container {
@@ -1301,8 +1301,8 @@ template {
   right: 22%; }
   @media screen and (max-width: 768px) {
     .bar {
-      width: 49%;
-      height: 44%;
+      width: 45%;
+      height: 43%;
       position: absolute;
       top: 0;
       right: 27%; } }
