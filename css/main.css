@@ -2166,6 +2166,9 @@ input[type="checkbox"]:checked + label:after {
   @media screen and (max-width: 768px) {
     .slider_right {
       right: 20%; } }
+  @media screen and (max-width: 480px) {
+    .slider_right {
+      right: 3%; } }
 
 .arrow {
   width: 184%;
