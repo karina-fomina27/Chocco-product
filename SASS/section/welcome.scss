@@ -23,40 +23,42 @@ html {
 
   @include tablets {
     background-image: url(../img/bgadapt.jpg);
-   
-  }
-  }
 
-  .main__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    @include tablets {
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      padding-top: 35%;
-      height: 100%;
+  }
+}
 
-      
-  @include phones{
-    padding-top: 65%;
-  }
-    }
-  }
+.main__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   @include tablets {
     width: 100%;
     align-items: center;
     justify-content: center;
-    
+    padding-top: 35%;
+    height: 100%;
 
-  }
 
-  @include phones {
-    margin-top: 6%;
+    @include phones {
+     
+    }
   }
+}
+
+@include tablets {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+@include phones {
+  margin-top: 6%;
+}
 
 
 
@@ -77,11 +79,11 @@ html {
   font-weight: 400;
   line-height: rem(30px);
   text-transform: uppercase;
-  
+
 
   &:before {
     content: url(../img/icon_png/phone_.png);
-    margin: 0 5%  0;
+    margin: 0 5% 0;
   }
 }
 
@@ -107,10 +109,8 @@ html {
   margin-block-end: 0;
   margin-bottom: 2.875rem;
   margin-top: rem(22px);
-  
-  @include tablets {
-   
-  }
+
+  @include tablets {}
 }
 
 .content-button {
@@ -149,8 +149,9 @@ html {
 
   @include tablets {
     width: 50%;
-    text-align: center;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @include phones {
@@ -177,14 +178,13 @@ html {
 }
 
 .pros {
-  width: 50%;
+  width: 30%;
   display: flex;
   z-index: 30;
-  margin-top: 30%;
+  margin-top: 10%;
 
   @include tablets {
-    margin-top: 11%;
-    margin-bottom: 7%;
+    width: 88%;
   }
 }
 
@@ -211,15 +211,15 @@ html {
   width: 50%;
 
   @include tablets {
- width: 0%;
+    width: 0%;
   }
 
 }
 
 .bar {
   position: absolute;
-  top: rem(48px);
-  right: 22%;
+  top: 1rem;
+  right: -2rem;
 
   @include tablets {
     width: 45%;
@@ -229,19 +229,19 @@ html {
     right: 27%;
   }
 
- @include phones{
-  width: 72%;
-    height: 45%;
+  @include phones {
+    width: 63%;
+    height: 38%;
     position: absolute;
-    top: rem(9px);
-    right: 15%;
- }
+    top: -3.4375rem;
+    right: 21%;
+  }
 }
 
 .decor {
   position: absolute;
-  top: 60%;
-  right: 16%;
+  top: 65%;
+  right: -1%;
 
   @include tablets {
     width: 48%;
@@ -251,32 +251,32 @@ html {
     right: 19%;
   }
 
-  @include phones{
-    width: 67%;
-    height: 25%;
+  @include phones {
+    width: 56%;
+    height: 21%;
     position: absolute;
-    top: 20%;
+    top: 13%;
     right: 10%;
   }
 }
 
-.leaf-welcome{
+.leaf-welcome {
   position: absolute;
   left: 12%;
   top: 91%;
- 
+
   @include tablets {
     width: 7%;
     height: 13%;
     position: absolute;
     top: 25%;
     left: 27%;
-}
+  }
 
-@include phones{
-  width: 11%;
-  height: 11%;
-  top: 30%;
-  left: 14%
+  @include phones {
+    width: 11%;
+    height: 11%;
+    top: 30%;
+    left: 14%
+  }
 }
-  } 
