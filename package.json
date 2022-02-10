@@ -19,7 +19,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-glob": "^1.1.0",
     "gulp-smile-px2rem": "^0.1.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "webpack": "^4.41.4"
   },
   "scripts": {
